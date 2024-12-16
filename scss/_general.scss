@@ -1,0 +1,41 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+$white:#fff;
+$gray-100:#f8f9fa;
+$gray-200:#e9ecef;
+$gray-300:#dee2e6;
+$gray-400:#ced4da;
+$gray-500:#adb5bd;
+$gray-600:#6c757d;
+$gray-700:#495057;
+$gray-800:#343a40;
+$gray-900:#212529;
+$black:#000;
+
+$blue:#0d6efd;
+$primary: $blue;
+
+
+
+$btn-border-radius: 0;
+$btn-border-radius-sm: 0;
+$btn-border-radius-lg: 0;
+
+
+$navbar-light-toggler-border-color: transparent;
+$navbar-dark-toggler-border-color:  transparent;
+
+$carousel-indicator-width: 10px;
+$carousel-indicator-height: 10px;
+$carousel-indicator-opacity: 1;
+
+$input-border-radius: 0;
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here

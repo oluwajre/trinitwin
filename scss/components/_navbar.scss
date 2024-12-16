@@ -1,0 +1,48 @@
+@use '../general' as *;
+@use '../section/mixins' as *;
+
+.navbar-container {
+    font-weight: 400;
+    @include fontFamilyPrimary;
+
+    li {
+        display: inline-flex;
+
+        a {
+            font-size: .8rem;
+            color: $black;
+            position: relative;
+
+            &::after {
+                @include linkLineProperty;
+                @include transitionProperty;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+
+        .active {
+            // border-bottom: 2px solid $primary;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 2px; /* Adjust border thickness */
+                width: 100%;
+                background-color: $primary; /* Adjust underline color */
+                bottom: -1px;
+                // @include transitionProperty;
+            }
+        }
+    }
+
+    p {
+        a {
+            @include defaultLinkStyle;
+        }
+    }
+}

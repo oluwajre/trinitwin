@@ -1,0 +1,172 @@
+@use '../general' as *;
+@use '../section/mixins' as *;
+
+.hero {
+
+    .contact-box {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        max-width: 1100px;
+
+        a:not(.contact-box__socials a) {
+            @include defaultLinkStyle;
+
+            &::after {
+                @include linkLineProperty;
+                bottom: -12px;
+                @include transitionProperty;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+
+        &__socials {
+
+            a {
+                color: $primary;
+                @include transitionProperty;
+
+                &:hover {
+                    color: $white;
+                }
+
+                .icon {
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    .slick-dot-border {
+        @include circularIndicator;
+    
+        &:has(.slick-dot.active) {
+            border: 2px solid $white;
+        }
+
+        .slick-dot {
+            border-radius: 50%;
+        }
+        
+    }
+
+    .banner-item {
+        height: 100vh;
+        overflow: hidden;
+    
+        @include media-breakpoint-down(md) {
+            max-height: 500px;
+        }
+    
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            filter: brightness(80%);
+        }
+    
+        .banner-caption {
+            width: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            top: 30%;
+
+            @include media-breakpoint-down(lg) {
+                top: 15%;
+            }
+
+            @include media-breakpoint-down(sm) {
+                top: 5%;
+            }
+    
+            .liner {
+                display: inline-block;
+                width: 80px;
+                height: 3px;
+                background-color: $primary;
+            }
+        }
+
+        #banner-caption-left {
+            top: 20%;
+
+            @include media-breakpoint-down(lg) {
+                top: 15%;
+            }
+
+            @include media-breakpoint-down(sm) {
+                top: 5%;
+            }
+        }
+    
+    }
+
+}
+
+.indicator-divider {
+    width: 120px;
+    height: 1px;
+    background-color: $white;
+    align-self: center;
+}
+
+
+.video-container {
+    background-image: url('src/assets/images/hero/banner1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $white;
+    width: 80%;
+    max-width: 300px;
+    height: 160px;
+
+    @include media-breakpoint-down(md) {
+        height: 130px;
+    }
+
+    .icon {
+        border-radius: 50%;
+        background-color: $gray-900;
+        border: 1rem solid $gray-900;
+        font-size: 1.2rem;
+        color: $white;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        @include transitionProperty;
+
+        &:hover {
+            background-color: $white;
+            border: 1rem solid $white;
+            color: $primary;
+        }
+    }
+
+}
+
+.videoOverlay {
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.9);
+
+    .video {
+        max-width: 560px;
+    }
+
+    button {
+
+        .icon {
+            font-size: 1.5rem;
+        }
+    }
+    
+}
+
+
+

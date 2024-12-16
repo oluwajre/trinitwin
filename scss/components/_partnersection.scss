@@ -1,0 +1,17 @@
+@use '../general' as *;
+@use '../section/mixins' as *;
+
+.partners {
+    background-color: $gray-200;
+
+    .brand-image {
+        max-width: 200px;
+        filter: grayscale(100%);
+        @include transitionProperty;
+
+        &:hover {
+            filter: grayscale(0%);
+            transform: scale(1.1);
+        }
+    }
+}

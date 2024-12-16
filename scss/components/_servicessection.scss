@@ -1,0 +1,139 @@
+@use '../general' as *;
+@use '../section/mixins' as *;
+
+.services {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-image: linear-gradient(to right, $gray-100 50%, $white 50%);
+
+    @include media-breakpoint-down(lg) {
+        background-image: none;
+    }
+
+
+    h1 {
+        max-width: 300px;
+
+        @include media-breakpoint-up(lg) {
+            max-width: 100%
+        }
+
+        @include media-breakpoint-down(sm) {
+            max-width: 260px
+        }
+    }
+
+    .logo {
+        max-width: 70px;
+
+        @include media-breakpoint-up(lg) {
+            max-width: 90px
+        }
+
+        @include media-breakpoint-down(sm) {
+            display: none
+        }
+    }
+
+    .explore-more {
+        @include defaultLinkStyle;
+        @include transitionProperty;
+        color: $primary;
+    
+        span {
+            @include exploreMoreIcon;
+            background-color: $primary;
+        }
+    
+        &:hover {
+            color: $gray-900;
+    
+            span {
+                width: 20px;
+                background-color: $gray-900;
+            }
+        }
+    }
+
+}
+
+
+.services-columns {
+    height: 500px;
+    // @include transitionProperty;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all .5s ease-out;
+    }
+
+    .image-overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba($primary, 0.1);
+        transition: all .5s ease-out;
+    }
+
+    .text-overlay-container {
+        position: absolute;
+        top: 325px;
+        transition: all .5s ease-out;
+
+        .text-overlay {
+            background-color: $primary;
+    
+            h4 {
+                font-size: 1.3em;
+                @include fontFamilyPrimary;
+                color: $white;
+                cursor: pointer;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+    
+            .explore-more {
+    
+                &:hover {
+                    color: $white;
+    
+                    span {
+                        background-color: $white;
+                    }
+                }
+            }
+    
+        }
+    }
+
+    
+
+    &:hover {
+        img {
+            transform: scale(1.05);
+        }
+
+        .image-overlay {
+            background-color: rgba($primary, 0.3);
+        }
+
+        .text-overlay-container {
+            transform: translateY(-40%);
+
+            .text-overlay {
+                background-color: $gray-900;
+    
+                .icon {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+
+
+}
+
+
