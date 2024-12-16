@@ -24,12 +24,15 @@ const GetInTouch = () => {
             const response = await axios.post('/.netlify/functions/sendEmail', formData);
             if (response.data.success) {
                 setStatus('Email sent successfully!');
+                console.log('confirm');
             } else {
                 setStatus('Failed to send email.');
+                console.log('failed');
             }
         } catch (error) {
             console.error('Error:', error);
             setStatus('An error occurred. Please try again.');
+            console.log('error');
         }
     };
 
