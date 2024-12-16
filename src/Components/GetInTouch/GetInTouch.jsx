@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import './GetInTouch.css';
 
 const GetInTouch = () => {
@@ -16,30 +16,30 @@ const GetInTouch = () => {
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setStatus(''); // Clear status message
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     setStatus(''); // Clear status message
 
-        try {
-            const response = await axios.post('/.netlify/functions/sendEmail', formData);
-            if (response.data.success) {
-                setStatus('Email sent successfully!');
-                console.log('confirm');
-            } else {
-                setStatus('Failed to send email.');
-                console.log('failed');
-            }
-        } catch (error) {
-            console.error('Error:', error);
-            setStatus('An error occurred. Please try again.');
-            console.log('error');
-        }
-    };
+    //     try {
+    //         const response = await axios.post('/.netlify/functions/sendEmail', formData);
+    //         if (response.data.success) {
+    //             setStatus('Email sent successfully!');
+    //             console.log('confirm');
+    //         } else {
+    //             setStatus('Failed to send email.');
+    //             console.log('failed');
+    //         }
+    //     } catch (error) {
+    //         console.error('Error:', error);
+    //         setStatus('An error occurred. Please try again.');
+    //         console.log('error');
+    //     }
+    // };
 
     return (
         <section className="getin-touch py-5">
             <div className='container'>
-                <form className='row justify-content-start getin-touch-form py-5 px-3 shadow-lg' onSubmit={handleSubmit}>
+                <form className='row justify-content-start getin-touch-form py-5 px-3 shadow-lg'>
                     <div className="col-12 mb-5 d-flex flex-column flex-sm-row justify-content-between align-items-sm-end align-items-start">
                         <div className='display-6 fw-bold mb-3 mb-sm-0'><span className='text-dark'>.</span> Get in <span className='text-primary'>Touch</span></div>
                         <div><a href="">See Google Map</a></div>
