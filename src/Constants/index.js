@@ -1,5 +1,5 @@
 import { contactdata } from "./contactdata";
-import { bannerInformationAbout } from "./bannerinformations";
+import { bannerInformationAbout } from "./bannerinformation";
 
 
 export { contactdata, bannerInformationAbout };
