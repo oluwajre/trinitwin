@@ -112,16 +112,16 @@ const HeroSection = () => {
             </div>
 
 
-            <div class="carousel-inner">
+            <div className="carousel-inner">
 
-                <div class="carousel-item active banner-item">
+                <div className="carousel-item active banner-item">
                     <img src={banner_1} alt="banner 1" />
                     <div className='container-sm banner-caption text-light text-center scale-up-center'>
                         <h1 className='display-1 banner-title'>Solar <span className='liner align-middle' /> Systems</h1>
                     </div>
                 </div>
 
-                <div class="carousel-item banner-item">
+                <div className="carousel-item banner-item">
                     <img src={banner_2} alt="banner 2" />
                     <div className='container-sm banner-caption text-light text-center scale-down-center'>
                         <h1 className='display-1 banner-sub-title'>Modern Technology in <span className='fw-light'>Sun Energy</span></h1>
@@ -130,7 +130,7 @@ const HeroSection = () => {
                     </div>
                 </div>
 
-                <div class="carousel-item banner-item">
+                <div className="carousel-item banner-item">
                     <img src={banner_3} alt="banner 3" />
                     <div className='container-sm banner-caption text-light text-left slide-right' id='banner-caption-left'>
                         <h1 className='display-1 banner-sub-title' style={{maxWidth: '700px'}}>Business Hand in Hand <span className='fw-light'>with New Technology</span></h1>
@@ -139,13 +139,13 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            {/* <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+            {/* <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
             </button> */}
         </div>
         {

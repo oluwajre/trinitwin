@@ -35,8 +35,8 @@ const PageLoader = ({ children }) => {
     <>
       {isLoading ? (
         <div className="fixed-top bg-light d-flex align-items-center justify-content-center h-100">
-          <div class="spinner-border text-primary" style={{width: '6rem', height: '6rem', fontWeight: 'bold'}} role="status">
-            <span class="visually-hidden">Loading...</span>
+          <div className="spinner-border text-primary" style={{width: '6rem', height: '6rem', fontWeight: 'bold'}} role="status">
+            <span className="visually-hidden">Loading...</span>
           </div>
         </div>
       ) : (

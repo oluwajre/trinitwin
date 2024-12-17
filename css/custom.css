@@ -4622,7 +4622,7 @@ textarea.form-control-lg {
   --bs-breadcrumb-margin-bottom: 1rem;
   --bs-breadcrumb-bg: ;
   --bs-breadcrumb-border-radius: ;
-  --bs-breadcrumb-divider-color: var(--bs-secondary-color);
+  --bs-breadcrumb-divider-color: #fff;
   --bs-breadcrumb-item-padding-x: 0.5rem;
   --bs-breadcrumb-item-active-color: var(--bs-secondary-color);
   display: flex;
@@ -4642,7 +4642,7 @@ textarea.form-control-lg {
   float: left;
   padding-right: var(--bs-breadcrumb-item-padding-x);
   color: var(--bs-breadcrumb-divider-color);
-  content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
+  content: var(--bs-breadcrumb-divider, ">") /* rtl: var(--bs-breadcrumb-divider, ">") */;
 }
 .breadcrumb-item.active {
   color: var(--bs-breadcrumb-item-active-color);
@@ -12220,9 +12220,6 @@ textarea.form-control-lg {
   height: 1px;
 }
 
-.partners {
-  background-color: #e9ecef;
-}
 .partners .brand-image {
   max-width: 200px;
   filter: grayscale(100%);
@@ -12284,6 +12281,43 @@ textarea.form-control-lg {
   text-decoration: underline;
 }
 
+.hero-banner {
+  min-height: 350px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .hero-banner {
+    min-height: 400px;
+  }
+}
+.hero-banner .hero-banner-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-banner .image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 110, 253, 0.25);
+}
+.hero-banner .breadcrumb li {
+  color: #fff;
+  font-weight: 600;
+}
+.hero-banner .breadcrumb li:first-child {
+  border-top: 4px solid #0d6efd;
+}
+.hero-banner .breadcrumb li:nth-child(2) {
+  border-top: 4px solid #adb5bd;
+}
+.hero-banner .breadcrumb a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 .display-1 {
   font-family: "Roboto", sans-serif;
 }
@@ -12323,6 +12357,36 @@ p, h1 {
 .section-title-p {
   font-size: 0.85rem;
   font-weight: 600;
+}
+
+.component-title {
+  font-size: 3.5em;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .component-title {
+    font-size: 6em;
+  }
+}
+@media (min-width: 992px) {
+  .component-title {
+    font-size: 8em;
+  }
+}
+
+.component-sub-title {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .component-sub-title {
+    font-size: 2em;
+  }
+}
+@media (min-width: 992px) {
+  .component-sub-title {
+    font-size: 2em;
+  }
 }
 
 .btn-padding {

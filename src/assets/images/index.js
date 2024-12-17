@@ -2,6 +2,7 @@ import logo from './logo.png';
 import banner_1 from './hero/banner1.jpg';
 import banner_2 from './hero/banner2.jpg';
 import banner_3 from './hero/banner3.jpg';
+import banner_about from './hero/bannerabout.webp';
 import felicitysolar_logo from './brands/felicity-logo.png';
 import restarsolar_logo from './brands/restar-logo.png';
 import sms_logo from './brands/sms-logo.png';
@@ -16,6 +17,7 @@ export {
         banner_1, 
         banner_2, 
         banner_3,
+        banner_about,
         felicitysolar_logo,
         restarsolar_logo,
         sms_logo,

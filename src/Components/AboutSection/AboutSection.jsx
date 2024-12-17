@@ -23,9 +23,9 @@ const AboutSection = () => {
             </div>
 
             <div className="row mt-5 p-5 shadow justify-content-between">
-                <Counter text='states' target='31'/>
-                <Counter text='project' target='135'/>
-                <Counter text='companies' target='105'/>
+                <Counter text='states' target='31' alternate={false}/>
+                <Counter text='project' target='135' alternate={false}/>
+                <Counter text='companies' target='105' alternate={false}/>
             </div>
         </div>
     </section>

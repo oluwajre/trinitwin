@@ -8,6 +8,8 @@ import GetInTouch from "./GetInTouch/GetInTouch";
 import FooterSection from "./FooterSection/FooterSection";
 import Counter from "./Counter/Counter";
 import PageLoader from "./PageLoader/PageLoader";
+import HeroBanner from "./HeroBanner/HeroBanner";
+import AboutOveriewSection from "./AboutOveriewSection/AboutOveriewSection";
 
 export { 
     Navbar, 
@@ -19,5 +21,7 @@ export {
     GetInTouch, 
     FooterSection,
     Counter,
-    PageLoader
+    PageLoader,
+    HeroBanner,
+    AboutOveriewSection
 };

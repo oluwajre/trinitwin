@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Counter.css';
 
-const Counter = ({ text, target, offset = 300 }) => {
+const Counter = ({ text, target, offset = 300, alternate }) => {
   const [count, setCount] = useState(0);
   const counterRef = useRef(null); // Ref to track the counter element's position
 
@@ -41,8 +41,8 @@ const Counter = ({ text, target, offset = 300 }) => {
 
   return (
     <div ref={counterRef} className='col-12 col-sm-auto my-3 my-sm-0 text-center'>
-      <h1 className="display-1 banner-title text-primary m-0 p-0">{count}</h1>
-      <h5 className='fw-bold text-uppercase m-0 p-0'>{text}</h5>
+      <h1 className={`display-1 banner-title m-0 p-0 ${alternate? 'text-dark': 'text-primary'}`}>{count}</h1>
+      <h5 className={`fw-bold text-uppercase m-0 p-0 ${alternate ? 'text-primary': 'text-dark'}`}>{text}</h5>
     </div>
   );
 };

@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { HomePage } from './Pages';
+import { HomePage, AboutPage } from './Pages';
 import { PageLoader } from './Components';
+import PageTitle from './utils/PageTitle';
 import './App.css';
 
 function App() {
@@ -10,7 +11,25 @@ function App() {
     <Router>
       <PageLoader>
         <Routes>
-          <Route path='/' element={ <HomePage /> } />
+          <Route 
+            path='/' 
+            element={
+              <>
+                <HomePage />
+                <PageTitle title='Home' />
+              </> 
+             } 
+          />
+
+          <Route 
+            path='/about'
+            element={
+              <>
+                <AboutPage />
+                <PageTitle title='About Us' />
+              </> 
+             } 
+          />
         </Routes>
       </PageLoader>
     </Router>

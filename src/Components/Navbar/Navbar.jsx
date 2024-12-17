@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import { logo } from '../../assets/images';
 import { contactdata } from '../../Constants';
+import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({ page }) => {
     const [collapse, setCollapse] = useState(true);
 
   return (
@@ -26,22 +27,22 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mx-auto align-items-center">
                         <li className="nav-item">
-                        <a className="nav-link active text-uppercase py-md-3 px-md-0 mx-md-2" aria-current="page" href="#">Home</a>
+                        <Link to='/' className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 ${page.toLowerCase()==='home'? 'active': ''}`} aria-current="page" href="#">Home</Link>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link text-uppercase py-md-3 px-md-0 mx-md-2" href="#">About</a>
+                        <Link to='/about' className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 ${page.toLowerCase()==='about'? 'active': ''}`} href="#">About</Link>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link text-uppercase py-md-3 px-md-0 mx-md-2" href="#">Services</a>
+                        <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 ${page.toLowerCase()==='services'? 'active': ''}`} href="#">Services</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link text-uppercase py-md-3 px-md-0 mx-md-2" href="#">Products</a>
+                        <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 ${page.toLowerCase()==='products'? 'active': ''}`} href="#">Products</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link text-uppercase py-md-3 px-md-0 mx-md-2" href="#">Project</a>
+                        <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 ${page.toLowerCase()==='project'? 'active': ''}`} href="#">Project</a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link text-uppercase py-md-3 px-md-0 mx-md-2" href="#">Contact</a>
+                        <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 ${page.toLowerCase()==='contact'? 'active': ''}`} href="#">Contact</a>
                         </li>
                     </ul>
 

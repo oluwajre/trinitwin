@@ -41,3 +41,29 @@ p, h1 {
     font-size: .85rem;
     font-weight: 600;
 }
+
+.component-title {
+    font-size: 3.5em;
+    font-weight: 600;
+
+    @include media-breakpoint-up(md) {
+        font-size: 6em;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 8em;
+    }
+}
+
+.component-sub-title {
+    font-size: 1.5em;
+    font-weight: 600;
+
+    @include media-breakpoint-up(md) {
+        font-size: 2em;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 2em;
+    }
+}

@@ -5,12 +5,12 @@ import { Navbar, HeroSection, ServicesSection, AboutSection, TestimonialSection,
 const HomePage = () => {
   return (
     <>
-        <Navbar />
+        <Navbar page='home' />
         <HeroSection />
         <ServicesSection />
         <AboutSection />
         <TestimonialSection />
-        <PartnerSection />
+        <PartnerSection text={true}/>
         <GetInTouch />
         <FooterSection />
     </>
