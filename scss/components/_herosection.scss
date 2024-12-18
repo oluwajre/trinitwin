@@ -131,24 +131,25 @@
         height: 130px;
     }
 
-    .icon {
-        border-radius: 50%;
-        background-color: $gray-900;
-        border: 1rem solid $gray-900;
-        font-size: 1.2rem;
-        color: $white;
-        width: 25px;
-        height: 25px;
-        cursor: pointer;
-        @include transitionProperty;
+}
 
-        &:hover {
-            background-color: $white;
-            border: 1rem solid $white;
-            color: $primary;
-        }
+.video-icon {
+    @include positionAbsoluteCenter;
+    border-radius: 50%;
+    background-color: $gray-900;
+    border: 1.6rem solid $gray-900;
+    font-size: 1.2rem;
+    color: $white;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    @include transitionProperty;
+
+    &:hover {
+        background-color: $white;
+        border: 1.6rem solid $white;
+        color: $primary;
     }
-
 }
 
 .videoOverlay {
@@ -166,6 +167,25 @@
         }
     }
     
+}
+
+.video-text {
+    position: absolute;
+    left: 50%;
+    top: 59%;
+    transform: translate(-50%, -50%);
+
+    @include media-breakpoint-down(lg) {
+        top: 64%;
+    }
+
+    @include media-breakpoint-down(md) {
+        top: 68%;
+    }
+
+    @include media-breakpoint-down(sm) {
+        top: 72%;
+    }
 }
 
 

@@ -10,6 +10,10 @@ import Counter from "./Counter/Counter";
 import PageLoader from "./PageLoader/PageLoader";
 import HeroBanner from "./HeroBanner/HeroBanner";
 import AboutOveriewSection from "./AboutOveriewSection/AboutOveriewSection";
+import CounterSection from "./CounterSection/CounterSection";
+import VideoOverlay from "./VideoOverlay/VideoOverlay";
+import VideoSection from "./VideoSection/VideoSection";
+import TeamSection from "./TeamSection/TeamSection";
 
 export { 
     Navbar, 
@@ -23,5 +27,9 @@ export {
     Counter,
     PageLoader,
     HeroBanner,
-    AboutOveriewSection
+    AboutOveriewSection,
+    CounterSection,
+    VideoOverlay,
+    VideoSection,
+    TeamSection
 };

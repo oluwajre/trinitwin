@@ -12014,10 +12014,15 @@ textarea.form-control-lg {
     height: 130px;
   }
 }
-.video-container .icon {
+
+.video-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   background-color: #212529;
-  border: 1rem solid #212529;
+  border: 1.6rem solid #212529;
   font-size: 1.2rem;
   color: #fff;
   width: 25px;
@@ -12025,9 +12030,9 @@ textarea.form-control-lg {
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
-.video-container .icon:hover {
+.video-icon:hover {
   background-color: #fff;
-  border: 1rem solid #fff;
+  border: 1.6rem solid #fff;
   color: #0d6efd;
 }
 
@@ -12040,6 +12045,28 @@ textarea.form-control-lg {
 }
 .videoOverlay button .icon {
   font-size: 1.5rem;
+}
+
+.video-text {
+  position: absolute;
+  left: 50%;
+  top: 59%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 991.98px) {
+  .video-text {
+    top: 64%;
+  }
+}
+@media (max-width: 767.98px) {
+  .video-text {
+    top: 68%;
+  }
+}
+@media (max-width: 575.98px) {
+  .video-text {
+    top: 72%;
+  }
 }
 
 .services {

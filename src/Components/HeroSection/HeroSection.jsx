@@ -4,48 +4,8 @@ import { banner_1, banner_2, banner_3 } from '../../assets/images';
 import { contactdata } from '../../Constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faPlay, faXmark } from '@fortawesome/free-solid-svg-icons'
-
-
-const VideoOverlay = ({ src, HandleVideo }) => {
-    const [isLoading, setIsLoading] = useState(true);
-
-    useEffect(() => {
-        const loadTimeout = setTimeout(() => setIsLoading(false), 2000);
-
-        return () => clearTimeout(loadTimeout);
-    }, []);
-
-    return (
-        <div className="videoOverlay d-flex align-items-center justify-content-center position-fixed top-0 vw-100 vh-100">
-            {isLoading ? (
-                <div className="spinner-border text-primary" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                </div>
-            ) : (
-                <iframe
-                    width="100%"
-                    height="315"
-                    src={src}
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="video shadow"
-                ></iframe>
-            )}
-
-            <button
-                className="btn btn-primary position-absolute top-0 end-0 me-3 mt-3 me-sm-5"
-                type="button"
-                onClick={HandleVideo}
-            >
-                <FontAwesomeIcon icon={faXmark} className="icon" />
-            </button>
-        </div>
-    );
-};
-
-
+import { faPlay} from '@fortawesome/free-solid-svg-icons'
+import VideoOverlay from '../VideoOverlay/VideoOverlay';
 
 
 const HeroSection = () => {
@@ -87,8 +47,8 @@ const HeroSection = () => {
 
             <div className="carousel-indicators mx-0 mb-0 d-flex align-items-start align-items-md-center justify-content-between flex-column flex-md-row gap-3 gap-md-0">
 
-                <div className="video-container d-flex align-items-center justify-content-center shadow-lg order-2 order-md-1">
-                    <FontAwesomeIcon icon={faPlay} className='icon' onClick={HandleVideo} />
+                <div className="position-relative video-container shadow-lg order-2 order-md-1">
+                    <FontAwesomeIcon icon={faPlay} className='video-icon' onClick={HandleVideo} />
                 </div>
 
                 <div className='d-flex align-items-center mx-3 order-1 order-md-2'>
@@ -151,7 +111,7 @@ const HeroSection = () => {
         {
             closeVideo?
             '':
-            <VideoOverlay src={contactdata.youtube} HandleVideo={HandleVideo}/>
+            <VideoOverlay src={contactdata.youtube_hero} HandleVideo={HandleVideo}/>
         }
     </section>
   )

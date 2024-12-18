@@ -25,12 +25,6 @@ const AboutOveriewSection = () => {
                     <a href="" className='fw-bold explore-more'>Explore More<span className='align-middle ms-3' /></a>
                 </div>
             </div>
-
-            {/* <div className="row mt-5 p-5 justify-content-between">
-                <Counter text='states' target='31' alternate={true}/>
-                <Counter text='project' target='135' alternate={true}/>
-                <Counter text='companies' target='105' alternate={true}/>
-            </div> */}
         </div>
     </section>
   )
