@@ -12231,20 +12231,21 @@ textarea.form-control-lg {
   align-items: flex-end;
   flex-wrap: wrap;
 }
-.testimonials .heading-section .icon-box {
+.testimonials .testimonial-inner .quote-line {
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+}
+
+.colored-icon-box {
   display: flex;
   align-items: flex-end;
   padding: 1.8em 0.7em 0.4em 1.7em;
   background-color: #0d6efd;
 }
-.testimonials .heading-section .icon-box .icon {
+.colored-icon-box .icon {
   font-size: 2em;
   color: #fff;
-}
-.testimonials .testimonial-inner .quote-line {
-  display: inline-block;
-  width: 40px;
-  height: 1px;
 }
 
 .partners .brand-image {
@@ -12345,6 +12346,83 @@ textarea.form-control-lg {
   cursor: pointer;
 }
 
+.team .ceo-section {
+  height: 500px;
+}
+.team .ceo-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease-out;
+}
+.team .ceo-section .image-overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: none;
+  transition: all 0.5s ease-out;
+}
+.team .ceo-section .image-overlay ul {
+  list-style-type: none;
+  padding: 1rem 1rem;
+}
+.team .ceo-section .image-overlay ul .icon {
+  color: #fff;
+  font-size: 1.1em;
+  padding: 0.3em 0;
+}
+.team .ceo-section .text-overlay-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: all 0.5s ease-out;
+}
+.team .ceo-section .text-overlay-container .text-overlay {
+  background-color: #0d6efd;
+}
+.team .ceo-section .text-overlay-container .text-overlay h4 {
+  font-size: 1.3em;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+.team .ceo-section .text-overlay-container .text-overlay p {
+  color: #dee2e6;
+}
+.team .ceo-section .text-overlay-container .text-overlay .icon {
+  font-size: 1.5em;
+  color: #dee2e6;
+}
+.team .ceo-section:hover .image-overlay {
+  opacity: 1;
+  display: inline-block;
+}
+.team .explore-more {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  color: #0d6efd;
+}
+.team .explore-more span {
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  transition: all 1s ease-out;
+  background-color: #0d6efd;
+}
+.team .explore-more:hover {
+  color: #212529;
+}
+.team .explore-more:hover span {
+  width: 20px;
+  background-color: #212529;
+}
+
+.writer-icon .icon {
+  font-size: 2.2em;
+  color: #0d6efd;
+}
+
 .display-1 {
   font-family: "Roboto", sans-serif;
 }
@@ -12387,8 +12465,13 @@ p, h1 {
 }
 
 .component-title {
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: 600;
+}
+@media (min-width: 576px) {
+  .component-title {
+    font-size: 3.5em;
+  }
 }
 @media (min-width: 768px) {
   .component-title {
@@ -12515,6 +12598,31 @@ p, h1 {
 .slide-right {
   -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-right-small {
+  0% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slide-right-small {
+  0% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.slide-right-small {
+  -webkit-animation: slide-right 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /*# sourceMappingURL=custom.css.map */

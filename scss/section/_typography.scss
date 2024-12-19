@@ -43,8 +43,12 @@ p, h1 {
 }
 
 .component-title {
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: 600;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 3.5em;
+    }
 
     @include media-breakpoint-up(md) {
         font-size: 6em;

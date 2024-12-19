@@ -9,6 +9,9 @@ import sms_logo from './brands/sms-logo.png';
 import service_cctv from './services/service-cctv.webp';
 import service_electrical from './services/service-electrical.webp';
 import service_solar from './services/service-solar.webp';
+import founder_image_1 from './team/founderimage1.webp';
+import founder_image_2 from './team/founderimage2.webp';
+import founder_image_3 from './team/founderimage3.webp';
 
 
 
@@ -23,6 +26,9 @@ export {
         sms_logo,
         service_cctv,
         service_electrical,
-        service_solar
+        service_solar,
+        founder_image_1,
+        founder_image_2,
+        founder_image_3
     };
 

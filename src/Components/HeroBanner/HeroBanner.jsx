@@ -11,9 +11,9 @@ const HeroBanner = ({ bannerInformation }) => {
             <p className='text-uppercase section-title-p pt-5'>{bannerInformation.subTitle}</p>
             <h1 className="display-1 banner-sub-title m-0 p-0">{bannerInformation.title}</h1>
             <nav aria-label="breadcrumb" className='mt-3'>
-                <ol class="breadcrumb text-white">
-                    <li class="breadcrumb-item"><Link to={bannerInformation.previousLink.path}>{bannerInformation.previousLink.name}</Link></li>
-                    <li class="breadcrumb-item active" aria-current="page">{bannerInformation.currentLink}</li>
+                <ol className="breadcrumb text-white">
+                    <li className="breadcrumb-item"><Link to={bannerInformation.previousLink.path}>{bannerInformation.previousLink.name}</Link></li>
+                    <li className="breadcrumb-item active" aria-current="page">{bannerInformation.currentLink}</li>
                 </ol>
             </nav>
         </div>

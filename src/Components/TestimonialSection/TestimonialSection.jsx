@@ -10,7 +10,7 @@ const TestimonialSection = () => {
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
 
           <div className="heading-section">
-            <div className="icon-box">
+            <div className="colored-icon-box">
               <FontAwesomeIcon icon={faQuoteLeft} className='icon' />
             </div>
 

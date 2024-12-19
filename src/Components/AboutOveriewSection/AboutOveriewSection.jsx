@@ -8,7 +8,7 @@ const AboutOveriewSection = () => {
         <div className="container mt-5">
             <div className="row align-items-center justify-content-between text-left about-text-container py-5">
                 <div className="col-lg-4 bg-primary align-self-stretch d-flex flex-column justify-content-center position-relative">
-                    <div className="col-8 col-lg-12">
+                    <div className="col-9 col-sm-8 col-lg-12">
                         <p className='text-uppercase section-title-p text-light pt-3 pt-lg-0'>About</p>
                         <h1 className='display-6 fw-bold mb-4 text-white' style={{maxWidth: '400px'}}><span className='text-white'>.</span> Welcome to Our <span className='text-white'>Trinitwin Company</span></h1>
                     </div>
