@@ -12442,6 +12442,7 @@ textarea.form-control-lg {
   font-weight: 500;
   font-size: 1.5em;
   min-width: 60px;
+  cursor: pointer;
   font-family: "Roboto", sans-serif;
 }
 .map-marker .icon {

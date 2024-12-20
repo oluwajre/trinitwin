@@ -2,20 +2,23 @@ import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { contactdata } from '../../Constants';
 
 const AnyReactComponent = ({ text }) => (
-    <div className="map-marker">
-        <FontAwesomeIcon icon={faLocationDot} className="icon" />
-        {text}
-    </div>
+    <a href={contactdata.google_map_link} style={{textDecoration: 'none'}} target='blank'>
+        <div className="map-marker">
+            <FontAwesomeIcon icon={faLocationDot} className="icon" />
+            {text}
+        </div>
+    </a>
 );
 
 const GoogleMap = () => {
 
     const defaultProps = {
         center: {
-            lat: 10.99835602,
-            lng: 77.01502627,
+            lat: 6.4340085,
+            lng: 5.5979932,
         },
         zoom: 11,
     };
