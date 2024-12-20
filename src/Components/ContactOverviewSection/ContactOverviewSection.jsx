@@ -9,7 +9,7 @@ const ContactOverviewSection = () => {
     <section className="contact-overview pt-5">
         <div className="container">
             <div className="row mt-5">
-                <div className="col-lg-5 bg-primary py-5 ps-4 text-light contact">
+                <div className="col-lg-5 bg-primary py-5 px-4 text-light contact">
                     <h1 className='display-6 fw-bold mb-4'>. Contact Us</h1>
                     <p className="lead fw-normal">{contactdata.address}</p>
                     <p className="lead fw-normal"><a href={`tel:${contactdata.phone_1}`}>{contactdata.phone_1}</a></p>
