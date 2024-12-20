@@ -33,3 +33,17 @@
         right: 0;
     }
 }
+
+.map-btn {
+    @include defaultLinkStyle;
+    color: $primary;
+    font-weight: 600;
+    font-size: 1.1em;
+    background-color: $white;
+    @include transitionProperty;
+
+    &:hover {
+        color: $white;
+        background-color: $gray-900;
+    }
+}

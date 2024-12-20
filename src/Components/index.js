@@ -14,6 +14,8 @@ import CounterSection from "./CounterSection/CounterSection";
 import VideoOverlay from "./VideoOverlay/VideoOverlay";
 import VideoSection from "./VideoSection/VideoSection";
 import TeamSection from "./TeamSection/TeamSection";
+import ContactOverviewSection from "./ContactOverviewSection/ContactOverviewSection";
+import GoogleMap from "./GoogleMap/GoogleMap";
 
 export { 
     Navbar, 
@@ -31,5 +33,7 @@ export {
     CounterSection,
     VideoOverlay,
     VideoSection,
-    TeamSection
+    TeamSection,
+    ContactOverviewSection,
+    GoogleMap
 };

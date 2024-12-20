@@ -27,10 +27,10 @@ const Navbar = ({ page }) => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mx-auto align-items-center">
                         <li className="nav-item">
-                        <Link to='/' className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='home'? 'active': ''}`} aria-current="page" href="#">Home</Link>
+                        <Link to='/' className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='home'? 'active': ''}`} aria-current="page">Home</Link>
                         </li>
                         <li className="nav-item">
-                        <Link to='/about' className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='about'? 'active': ''}`} href="#">About</Link>
+                        <Link to='/about' className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='about'? 'active': ''}`}>About</Link>
                         </li>
                         <li className="nav-item">
                         <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='services'? 'active': ''}`} href="#">Services</a>
@@ -42,7 +42,7 @@ const Navbar = ({ page }) => {
                         <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='project'? 'active': ''}`} href="#">Project</a>
                         </li>
                         <li className="nav-item">
-                        <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='contact'? 'active': ''}`} href="#">Contact</a>
+                        <Link to='/contact' className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='contact'? 'active': ''}`}>Contact</Link>
                         </li>
                     </ul>
 

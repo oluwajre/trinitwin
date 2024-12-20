@@ -12261,11 +12261,12 @@ textarea.form-control-lg {
 .getin-touch {
   background-image: url("src/assets/images/contact/getintouchbackground.jpg");
 }
-.getin-touch .getin-touch-form {
+
+.getin-touch-form {
   max-width: 800px;
   background-color: #fff;
 }
-.getin-touch .getin-touch-form a {
+.getin-touch-form a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
@@ -12274,10 +12275,10 @@ textarea.form-control-lg {
   color: #0d6efd;
   transition: all 0.3s ease-out;
 }
-.getin-touch .getin-touch-form a:hover {
+.getin-touch-form a:hover {
   color: #0c50b4;
 }
-.getin-touch .getin-touch-form input, .getin-touch .getin-touch-form textarea {
+.getin-touch-form input:focus, .getin-touch-form textarea:focus {
   box-shadow: none;
 }
 
@@ -12423,6 +12424,35 @@ textarea.form-control-lg {
   color: #0d6efd;
 }
 
+.contact-overview .contact a:not(.map-btn) {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: all 0.3s ease-out;
+}
+.contact-overview .contact a:not(.map-btn):hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.map-marker {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5em;
+  min-width: 60px;
+  font-family: "Roboto", sans-serif;
+}
+.map-marker .icon {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #0d6efd;
+  font-size: 2.25em;
+}
+
 .display-1 {
   font-family: "Roboto", sans-serif;
 }
@@ -12523,6 +12553,21 @@ p, h1 {
 }
 .btn-background-black:hover::before {
   right: 0;
+}
+
+.map-btn {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  color: #0d6efd;
+  font-weight: 600;
+  font-size: 1.1em;
+  background-color: #fff;
+  transition: all 0.3s ease-out;
+}
+.map-btn:hover {
+  color: #fff;
+  background-color: #212529;
 }
 
 @-webkit-keyframes scale-down-center {

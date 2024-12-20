@@ -3,27 +3,29 @@
 
 .getin-touch {
     background-image: url('src/assets/images/contact/getintouchbackground.jpg');
+}
 
-    .getin-touch-form {
-        max-width: 800px;
-        background-color: $white;
+.getin-touch-form {
+    max-width: 800px;
+    background-color: $white;
 
-        a {
-            @include defaultLinkStyle;
-            @include fontFamilyPrimary;
-            font-weight: 700;
-            color: $primary;
-            @include transitionProperty;
+    a {
+        @include defaultLinkStyle;
+        @include fontFamilyPrimary;
+        font-weight: 700;
+        color: $primary;
+        @include transitionProperty;
 
-            &:hover {
-                color: #0c50b4;
-            }
+        &:hover {
+            color: #0c50b4;
         }
+    }
 
-
-        input, textarea {
+    input, textarea {
+        
+        &:focus {
             box-shadow: none;
         }
-
     }
+
 }

@@ -1,6 +1,6 @@
 import { contactdata } from "./contactdata";
-import { bannerInformationAbout } from "./bannerinformation";
+import { bannerInformationAbout, bannerInformationContact } from "./bannerinformation";
 import { teamdata } from "./teamdata";
 
 
-export { contactdata, bannerInformationAbout, teamdata };
+export { contactdata, bannerInformationAbout, bannerInformationContact, teamdata };

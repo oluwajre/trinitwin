@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { HomePage, AboutPage } from './Pages';
+import { HomePage, AboutPage, ContactPage } from './Pages';
 import { PageLoader } from './Components';
 import PageTitle from './utils/PageTitle';
 import './App.css';
@@ -27,6 +27,16 @@ function App() {
               <>
                 <AboutPage />
                 <PageTitle title='About Us' />
+              </> 
+             } 
+          />
+
+          <Route 
+            path='/contact'
+            element={
+              <>
+                <ContactPage />
+                <PageTitle title='Contact Us' />
               </> 
              } 
           />

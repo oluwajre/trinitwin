@@ -5,6 +5,7 @@ import { logo } from '../../assets/images';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faCopyright } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const FooterSection = () => {
   return (
@@ -23,10 +24,10 @@ const FooterSection = () => {
                 <div className="col-12 col-lg-3 mb-3 mb-lg-0">
                     <h5 className="text-light m-0 mb-2 mb-lg-4 mt-2 fw-bold">Company and Links</h5>
                     <ul className="footer-link-group">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Products</a></li>
+                        <li><Link to='/'>Home</Link></li>
+                        <li><Link to='/about'>About</Link></li>
+                        <li><Link to='/'>Services</Link></li>
+                        <li><Link to='/'>Products</Link></li>
                     </ul>
                 </div>
                 <div className="col-12 col-lg-3 mb-3 mb-lg-0">

@@ -11,7 +11,11 @@ const HomePage = () => {
         <AboutSection />
         <TestimonialSection />
         <PartnerSection text={true}/>
-        <GetInTouch />
+        <section className="getin-touch py-5">
+          <div className="container">
+            <GetInTouch isFormComplete={false} />
+          </div>
+        </section>
         <FooterSection />
     </>
   )
