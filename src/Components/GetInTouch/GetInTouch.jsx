@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './GetInTouch.css';
-import { contactdata } from '../../Constants';
 import { Link } from 'react-router-dom';
 
 const GetInTouch = ({ isFormComplete }) => {
@@ -21,24 +20,36 @@ const GetInTouch = ({ isFormComplete }) => {
         setFormData({ ...formData, [name]: value });
     };
 
+    const resetForm = () => {
+        setFormData({
+            name: '',
+            email: '',
+            message: '',
+            subject: '',
+            phone: '',
+        });
+    };
+
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
         // setStatus('loading');
 
         try {
-            const response = await axios.post('https://api.example.com/endpoint', formData);
+            const response = await axios.post('https://trenova-form-backend.onrender.com/api/contact/send-message', formData);
             if (response.data.success) {
                 setStatus('success');
-                setTimeout(() => setStatus(''), 3000); // Clear status
+                resetForm();
+                setTimeout(() => setStatus(''), 5000);
             } else {
                 setStatus('error');
-                setTimeout(() => setStatus(''), 3000); // Clear status
+                setTimeout(() => setStatus(''), 5000);
             }
         } catch (error) {
             console.error('Error:', error);
             setStatus('error');
-            setTimeout(() => setStatus(''), 3000); // Clear status
+            setTimeout(() => setStatus(''), 5000);
         } finally {
             setIsSubmitting(false);
         }
@@ -90,6 +101,7 @@ const GetInTouch = ({ isFormComplete }) => {
                             name="phone"
                             value={formData.phone}
                             onChange={handleChange}
+                            minLength='11'
                         />
                         <label htmlFor="floatingInputPhone" className="ms-2">Phone</label>
                     </div>
@@ -124,7 +136,7 @@ const GetInTouch = ({ isFormComplete }) => {
 
             <div className="col-12">
                 {status === 'success' && (
-                    <p className="mt-3 text-success" aria-live="polite">Your message was successfully sent.</p>
+                    <p className="mt-3 text-success" aria-live="polite">Your message was successfully sent, you'll be contacted soon.</p>
                 )}
 
                 {status === 'error' && (
