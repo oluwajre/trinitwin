@@ -3,6 +3,8 @@ import './Navbar.css';
 import { logo } from '../../assets/images';
 import { contactdata } from '../../Constants';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = ({ page }) => {
     const [collapse, setCollapse] = useState(true);
@@ -32,17 +34,24 @@ const Navbar = ({ page }) => {
                         <li className="nav-item">
                         <Link to='/about' className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='about'? 'active': ''}`}>About</Link>
                         </li>
+
+                        <li className="nav-item dropdown">
+                            <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='services/our services'? 'active': ''}`} href="#" role='button' data-bs-toggle="dropdown" aria-expanded="false">Services<FontAwesomeIcon icon={faChevronDown} className='icon ms-1' /></a>
+                            <ul className="dropdown-menu">
+                                <li><Link to='/services' className={`nav-link text-uppercase px-md-0 mx-md-2 ${page.toLowerCase()==='services/our services'? 'active': ''}`}>Our Services</Link></li>
+                                <li style={{display: 'block', opacity: 0}}><hr class="dropdown-divider" /></li>
+                                <li><a className={`nav-link text-uppercase px-md-0 mx-md-2 ${page.toLowerCase()==='services'? 'active': ''}`} href="#">Services details</a></li>
+                            </ul>
+                        </li>
+
                         <li className="nav-item">
-                        <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='services'? 'active': ''}`} href="#">Services</a>
+                            <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='products'? 'active': ''}`} href="#">Products</a>
                         </li>
                         <li className="nav-item">
-                        <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='products'? 'active': ''}`} href="#">Products</a>
+                            <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='project'? 'active': ''}`} href="#">Project</a>
                         </li>
                         <li className="nav-item">
-                        <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='project'? 'active': ''}`} href="#">Project</a>
-                        </li>
-                        <li className="nav-item">
-                        <Link to='/contact' className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='contact'? 'active': ''}`}>Contact</Link>
+                            <Link to='/contact' className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='contact'? 'active': ''}`}>Contact</Link>
                         </li>
                     </ul>
 
