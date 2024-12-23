@@ -56,7 +56,7 @@ const GetInTouch = ({ isFormComplete }) => {
     };
 
     return (
-        <form className="row getin-touch-form py-5 px-3 shadow-lg" onSubmit={handleSubmit}>
+        <form className="row getin-touch-form py-5 px-3 shadow-lg appear" onSubmit={handleSubmit}>
             <div className="col-12 mb-5 d-flex flex-column flex-sm-row justify-content-between align-items-sm-end align-items-start">
                 <div className="display-6 fw-bold mb-3 mb-sm-0">
                     <span className="text-dark">.</span> Get in <span className="text-primary">Touch</span>

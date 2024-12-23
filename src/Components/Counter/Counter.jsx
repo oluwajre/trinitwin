@@ -40,7 +40,7 @@ const Counter = ({ text, target, offset = 300, alternate }) => {
   }, [count, target, offset]);
 
   return (
-    <div ref={counterRef} className='col-12 col-sm-auto my-3 my-sm-0 text-center d-flex flex-column align-items-center justify-content-center'>
+    <div ref={counterRef} className='col-12 col-sm-auto my-3 my-sm-0 text-center d-flex flex-column align-items-center justify-content-center appear'>
       <h1 className={`display-1 banner-title m-0 p-0 ${alternate? 'text-dark': 'text-primary'}`}>{count}</h1>
       <h5 className={`fw-bold text-uppercase m-0 p-0 ${alternate ? 'text-primary': 'text-dark'}`}>{text}</h5>
     </div>

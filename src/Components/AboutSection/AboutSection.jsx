@@ -6,8 +6,8 @@ const AboutSection = () => {
   return (
     <section className="about mb-5" id="about">
         <div className="container">
-            <p className='text-uppercase section-title-p text-primary'>About</p>
-            <div className="row align-items-start justify-content-between text-left about-text-container">
+            <p className='text-uppercase section-title-p text-primary appear'>About</p>
+            <div className="row align-items-start justify-content-between text-left about-text-container appear">
                 <div className="col-10 col-sm-8 col-lg-5">
                     <h1 className='display-6 fw-bold mb-4' style={{maxWidth: '400px'}}><span className='text-primary'>.</span> Welcome to Our <span className='text-primary'>Trinitwin Company</span></h1>
                 </div>

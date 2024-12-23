@@ -10,9 +10,9 @@ const ServicesSection = () => {
     <section className="services" id="services">
         <div className="container">
 
-            <div className="row align-items-center">
+            <div className="row align-items-center appear">
                 <p className='text-uppercase section-title-p text-primary'>Services</p>
-                <div className="col-lg-7 mb-4">
+                <div className="col-lg-7 mb-4 appear">
                     <div className="row">
                         <div className="col-9 col-lg-7"><h1 className='display-6 fw-bold mb-0'>Welcome to Trinitwin Services</h1></div>
                         <div className="col-3 col-lg-5 align-right">
@@ -30,7 +30,7 @@ const ServicesSection = () => {
             </div>
 
             <div className="row align-items-center justify-content-center justify-content-lg-between g-4 mt-5">
-                <div className="col-12 col-md-6 col-lg-4">
+                <div className="col-12 col-md-6 col-lg-4 appear">
                     <div className='services-columns position-relative pt-4 overflow-hidden'>
                         <img src={service_solar} alt="" className='z-0 position-absolute top-0 start-0' />
                         <div className="image-overlay position-absolute top-0 start-0" />
@@ -53,7 +53,7 @@ const ServicesSection = () => {
                     </div>
                 </div>
 
-                <div className="col-12 col-md-6 col-lg-4">
+                <div className="col-12 col-md-6 col-lg-4 appear">
                     <div className='services-columns position-relative pt-4 overflow-hidden'>
                         <img src={service_cctv} alt="" className='z-0 position-absolute top-0 start-0' />
                         <div className="image-overlay position-absolute top-0 start-0" />
@@ -76,7 +76,7 @@ const ServicesSection = () => {
                     </div>
                 </div>
 
-                <div className="col-12 col-md-6 col-lg-4">
+                <div className="col-12 col-md-6 col-lg-4 appear">
                     <div className='services-columns position-relative pt-4 overflow-hidden'>
                         <img src={service_electrical} alt="" className='z-0 position-absolute top-0 start-0' />
                         <div className="image-overlay position-absolute top-0 start-0" />

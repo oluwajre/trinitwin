@@ -57,7 +57,7 @@ const HeroSection = () => {
                     </div>
 
                     <div className="slick-dot-border me-2 text-center">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" className='slick-dot' aria-label="Slide 2" onClick={()=> setSlideNumber(2)}></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" className='slick-dot next-carousel-click' aria-label="Slide 2" onClick={()=> setSlideNumber(2)}></button>
                     </div>
                     
                     <div className="slick-dot-border me-2 text-center">

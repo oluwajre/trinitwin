@@ -13,7 +13,7 @@ const VideoSection = ({imageSrc, youtubeSrc}) => {
 
   return (
     <section className="video-section">
-        <div className="container position-relative">
+        <div className="container position-relative appear">
             <img src={imageSrc} alt="" className='img-fluid' />
             <div>
                 <FontAwesomeIcon icon={faPlay} className='video-icon' onClick={HandleVideo} />

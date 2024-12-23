@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HomePage, AboutPage, ContactPage } from './Pages';
 import { PageLoader } from './Components';
-import PageTitle from './utils/PageTitle';
+import { PageTitle } from './utils';
 import './App.css';
 
 function App() {

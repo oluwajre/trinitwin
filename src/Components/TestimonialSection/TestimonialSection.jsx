@@ -6,7 +6,7 @@ import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 const TestimonialSection = () => {
   return (
     <section className="testimonials" id="testimonials">
-      <div className="container">
+      <div className="container appear">
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
 
           <div className="heading-section">
@@ -25,7 +25,7 @@ const TestimonialSection = () => {
               </div>
 
               <div className="slick-dot-border me-5 text-center">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" className="slick-dot" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" className="slick-dot next-carousel-click" aria-label="Slide 2"></button>
               </div>
 
               <div className="slick-dot-border text-center">
