@@ -11,11 +11,11 @@
         font-weight: 600;
 
         @include media-breakpoint-up(md) {
-            font-size: 6em;
+            font-size: 5em;
         }
 
         @include media-breakpoint-up(lg) {
-            font-size: 8em;
+            font-size: 7em;
         }
     }
 

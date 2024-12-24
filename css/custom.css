@@ -11923,6 +11923,9 @@ textarea.form-control-lg {
   color: inherit;
   cursor: pointer;
 }
+.navbar-container .navbar-collapse {
+  overflow-y: visible;
+}
 
 .hero .contact-box {
   position: absolute;
@@ -12191,9 +12194,14 @@ textarea.form-control-lg {
   font-size: 1.3em;
   font-family: "Roboto", sans-serif;
   color: #fff;
+}
+.services-columns .text-overlay-container .text-overlay h4 a {
+  font-size: 1em;
+  text-decoration: none;
+  color: inherit;
   cursor: pointer;
 }
-.services-columns .text-overlay-container .text-overlay h4:hover {
+.services-columns .text-overlay-container .text-overlay h4 a:hover {
   color: #0d6efd;
 }
 .services-columns .text-overlay-container .text-overlay .explore-more:hover {
@@ -12500,12 +12508,12 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   .display-1.banner-title {
-    font-size: 6em;
+    font-size: 5em;
   }
 }
 @media (min-width: 992px) {
   .display-1.banner-title {
-    font-size: 8em;
+    font-size: 7em;
   }
 }
 .display-1.banner-sub-title {

@@ -90,4 +90,8 @@
             @include defaultLinkStyle;
         }
     }
+
+    .navbar-collapse {
+        overflow-y: visible;
+    }
 }

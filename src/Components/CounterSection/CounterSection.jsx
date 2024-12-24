@@ -14,6 +14,7 @@ const CounterSection = ({backgroundColor, alternate}) => {
                 <Counter text='states' target='31' alternate={alternate}/>
                 <Counter text='project' target='135' alternate={alternate}/>
                 <Counter text='companies' target='105' alternate={alternate}/>
+                <Counter text='homes' target='200' alternate={alternate}/>
             </div>
         </div>
     </section>

@@ -34,6 +34,6 @@ export {
         founder_image_2,
         founder_image_3,
         get_in_touch_background,
-        contact_banner
+        contact_banner,
     };
 

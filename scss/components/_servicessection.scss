@@ -88,11 +88,16 @@
                 font-size: 1.3em;
                 @include fontFamilyPrimary;
                 color: $white;
-                cursor: pointer;
 
-                &:hover {
-                    color: $primary;
+                a {
+                    font-size: 1em;
+                    @include defaultLinkStyle;
+
+                    &:hover {
+                        color: $primary;
+                    }
                 }
+                
             }
     
             .explore-more {

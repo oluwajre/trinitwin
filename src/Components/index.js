@@ -16,6 +16,8 @@ import VideoSection from "./VideoSection/VideoSection";
 import TeamSection from "./TeamSection/TeamSection";
 import ContactOverviewSection from "./ContactOverviewSection/ContactOverviewSection";
 import GoogleMap from "./GoogleMap/GoogleMap";
+import ServicesOverviewSection from "./ServicesOverviewSection/ServicesOverviewSection";
+import ServiceColumn from "./ServiceColumn/ServiceColumn";
 
 export { 
     Navbar, 
@@ -35,5 +37,7 @@ export {
     VideoSection,
     TeamSection,
     ContactOverviewSection,
-    GoogleMap
+    GoogleMap,
+    ServicesOverviewSection,
+    ServiceColumn
 };

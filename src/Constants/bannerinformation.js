@@ -1,4 +1,4 @@
-import { banner_about, contact_banner } from "../assets/images";
+import { banner_about, contact_banner, banner_2 } from "../assets/images";
 
 export const bannerInformationAbout = {
 
@@ -21,4 +21,15 @@ export const bannerInformationContact = {
         path: '/',
     },
     currentLink: 'Contact',
+}
+
+export const bannerInformationServices = {
+    imageSrc: banner_2,
+    subTitle: 'Trinitwin',
+    title: 'Our Services',
+    previousLink: {
+        name: 'Home',
+        path: '/',
+    },
+    currentLink: 'Our Services',
 }

@@ -26,6 +26,7 @@ const AboutSection = () => {
                 <Counter text='states' target='31' alternate={false}/>
                 <Counter text='project' target='135' alternate={false}/>
                 <Counter text='companies' target='105' alternate={false}/>
+                <Counter text='homes' target='200' alternate={false}/>
             </div>
         </div>
     </section>
