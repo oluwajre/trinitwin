@@ -1,7 +1,8 @@
 import React from 'react';
 import './ServiceColumn.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const ServiceColumn = ({ data }) => {
   return (
@@ -15,12 +16,12 @@ const ServiceColumn = ({ data }) => {
                 <h1 className='text-white display-1 fw-bold opacity-50 px-4' style={{fontSize: '5em'}}>{data.number}</h1>
                 <div className='text-overlay px-4 pb-4'>
                     <div className='d-flex align-items-center justify-content-between py-4'>
-                        <h4 className='my-0'><a href="">{data.heading}</a></h4>
+                        <h4 className='my-0'><Link to={data.link}>{data.heading}</Link></h4>
                         <FontAwesomeIcon icon={faChevronRight} className='icon text-light' />
                     </div>
                     <div>
                         <p className='text-secondary mb-0'>{data.text}</p>
-                        <a href={data.link} className='fw-bold explore-more'>Explore More<span className='align-middle ms-3' /></a>
+                        <Link to={data.link} className='fw-bold explore-more'>Explore More<span className='align-middle ms-3' /></Link>
                     </div>
 
                 </div>

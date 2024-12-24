@@ -6,7 +6,7 @@ import { servicecolumndata } from '../../Constants';
 
 const ServicesOverviewSection = () => {
   return (
-    <section className="services" id="services">
+    <section className="services pb-0" id="services">
             <div className="container">
     
                 <div className="row align-items-center appear">
@@ -27,7 +27,7 @@ const ServicesOverviewSection = () => {
                     </div>
                 </div>
 
-                <div className="row text-center justify-content-center mt-5 pt-5">
+                <div className="row text-center justify-content-center mt-5">
                     <div className="col-12 appear">
                         {/* <p className='text-uppercase section-title-p text-primary m-0 mb-3 p-0'>SERVICES</p> */}
                         <h1 className='display-6 fw-bold m-0 mb-3 p-0'><span className='text-primary'>.</span> We provide <span className='text-primary'>Creative Services</span></h1>

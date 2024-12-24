@@ -33,3 +33,14 @@ export const bannerInformationServices = {
     },
     currentLink: 'Our Services',
 }
+
+export const bannerInformationServicesDetails = {
+    imageSrc: banner_2,
+    subTitle: 'Service Details',
+    title: '',
+    previousLink: {
+        name: 'Services',
+        path: '/services',
+    },
+    currentLink: '',
+}
