@@ -7,7 +7,7 @@ export const servicecolumndata = [
         heading: 'Solar Installation',
         number: '01',
         text: 'Customized solar energy solutions to lower electricity costs and promote eco-friendly energy usage.',
-        link: 'service_detail/solar_installation',
+        link: '/services/service_detail/solar_installation',
     },
     {
         imageSource: service_cctv,

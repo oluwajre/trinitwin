@@ -36,7 +36,7 @@ const Navbar = ({ page }) => {
                         </li>
 
                         <li className="nav-item dropdown">
-                            <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='services/our services'||'services/service detail' ? 'active': ''}`} href="#" role='button' data-bs-toggle="dropdown" aria-expanded="false">Services<FontAwesomeIcon icon={faChevronDown} className='icon ms-1' /></a>
+                            <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase() === 'services/our services' || page.toLowerCase() === 'services/service detail' ? 'active' : ''}`} href="#" role='button' data-bs-toggle="dropdown" aria-expanded="false">Services<FontAwesomeIcon icon={faChevronDown} className='icon ms-1' /></a>
                             <ul className="dropdown-menu">
                                 <li><Link to='/services' className={`nav-link text-uppercase px-md-0 mx-md-2 ${page.toLowerCase()==='services/our services'? 'active': ''}`}>Our Services</Link></li>
                                 <li style={{display: 'block', opacity: 0}}><hr className="dropdown-divider" /></li>

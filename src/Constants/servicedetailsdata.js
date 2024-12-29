@@ -1,5 +1,5 @@
 import { bannerInformationServicesDetails } from "./bannerinformation";
-import { banner_1 } from "../assets/images";
+import { banner_3 } from "../assets/images";
 
 export const servicedetailsdata = {
     
@@ -7,9 +7,9 @@ export const servicedetailsdata = {
 
         hero_banner: {
             ...bannerInformationServicesDetails,
-            imageSrc: banner_1,
+            imageSrc: banner_3,
             title: 'Solar Installation',
-            currentLink: 'Service Detail > Solar Installation',
+            currentLink: 'Solar Installation',
         },
 
     },

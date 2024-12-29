@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import './ServiceDetailsPage.css';
-import { Navbar, HeroBanner } from "../../Components";
+import { Navbar, HeroBanner, ServiceDetails, GetInTouch, FooterSection } from "../../Components";
 import { servicedetailsdata } from "../../Constants";
 
 const ServiceDetailsPage = () => {
@@ -26,6 +26,13 @@ const ServiceDetailsPage = () => {
     <>
         <Navbar page='services/service detail'/>
         <HeroBanner bannerInformation={data.hero_banner} />
+        <ServiceDetails />
+        <section>
+          <div className="container my-5">
+            <GetInTouch isFormComplete={false} />
+          </div>
+        </section>
+        <FooterSection />
     </>
   )
 }

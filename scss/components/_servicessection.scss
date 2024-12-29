@@ -141,4 +141,48 @@
 
 }
 
+.service-details-section {
+    // padding-bottom: 10rem;
+
+    .service-highlight-column {
+        border-bottom: 1px solid $gray-500;
+
+        .service-highlight-btn {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+            border: transparent;
+            @include transitionProperty;
+            
+    
+            .direction-icon {
+                padding: 1em 0.7em;
+                border: 1px solid $gray-800;
+                color: $gray-800;
+                background-color: inherit;
+            }
+    
+            &:hover {
+    
+                .direction-icon {
+                    border-color: $primary;
+                    background-color: $primary;
+                    color: $white;
+    
+                }
+            }
+        }
+
+        .plus-icon {
+            color: $primary;
+            font-weight: 800;
+            font-size: 1.1em;
+        }
+
+    }
+
+    
+}
+
 
