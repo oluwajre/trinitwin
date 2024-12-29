@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import './ServiceDetailsPage.css';
-import { Navbar, HeroBanner, ServiceDetails, GetInTouch, FooterSection } from "../../Components";
+import { Navbar, HeroBanner, ServiceDetails, GetInTouch, FooterSection, PageLoader } from "../../Components";
 import { servicedetailsdata } from "../../Constants";
 
 const ServiceDetailsPage = () => {
@@ -17,7 +17,8 @@ const ServiceDetailsPage = () => {
         return (
           <div>
             <Navbar page="services/service detail" />
-            <p>Service not found. Please check the URL or select a valid service.</p>
+            <PageLoader />
+            {/* <p>Service not found. Please check the URL or select a valid service.</p> */}
           </div>
         );
       }
