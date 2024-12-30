@@ -19,6 +19,7 @@ import GoogleMap from "./GoogleMap/GoogleMap";
 import ServicesOverviewSection from "./ServicesOverviewSection/ServicesOverviewSection";
 import ServiceColumn from "./ServiceColumn/ServiceColumn";
 import ServiceDetails from "./ServiceDetails/ServiceDetails";
+import ServiceHighlight from "./ServiceHighlight/ServiceHighlight";
 
 export { 
     Navbar, 
@@ -41,5 +42,6 @@ export {
     GoogleMap,
     ServicesOverviewSection,
     ServiceColumn,
-    ServiceDetails
+    ServiceDetails,
+    ServiceHighlight
 };

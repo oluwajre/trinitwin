@@ -27,7 +27,7 @@ const ServiceDetailsPage = () => {
     <>
         <Navbar page='services/service detail'/>
         <HeroBanner bannerInformation={data.hero_banner} />
-        <ServiceDetails />
+        <ServiceDetails data={data.service_details}/>
         <section>
           <div className="container my-5">
             <GetInTouch isFormComplete={false} />
