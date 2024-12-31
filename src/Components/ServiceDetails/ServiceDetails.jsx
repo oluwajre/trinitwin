@@ -10,12 +10,13 @@ const ServiceDetails = ({ data }) => {
     };
 
     return (
-        <section className="service-details-section pb-5">
+        <section className="service-details-section">
             <div className="container">
                 <div className="row mb-4">
                     <div className="col-10 col-sm-12 mb-2 mt-4">
                         <h1 className="display-6 fw-bold">
-                            {data.title}
+                            <span>{data.title_main}</span>
+                            <span className='text-primary'>{data.title_primary}</span>
                         </h1>
                     </div>
                     <div className="col-12">

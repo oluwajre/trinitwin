@@ -1,4 +1,4 @@
-import { service_solar, service_cctv, service_electrical } from "../assets/images";
+import { service_solar, service_cctv, service_electrical, service_inspection, service_consultancy, service_batteries } from "../assets/images";
 
 export const servicecolumndata = [
     {
@@ -15,7 +15,7 @@ export const servicecolumndata = [
         heading: 'CCTV Installation',
         number: '02',
         text: 'Reliable surveillance systems providing 24/7 security and peace of mind for homes and businesses.',
-        link: '',
+        link: '/services/service_detail/cctv_installation',
     },
     {
         imageSource: service_electrical,
@@ -23,31 +23,31 @@ export const servicecolumndata = [
         heading: 'Electrical Wiring',
         number: '03',
         text: 'Expert wiring services ensuring safety, efficiency, and compliance for residential and commercial properties.',
-        link: '',
+        link: '/services/service_detail/electrical_wiring',
     },
     {
-        imageSource: service_solar,
+        imageSource: service_inspection,
         subHeading: 'MEASURES',
         heading: 'Inspection and Repair',
         number: '04',
         text: 'Trinitwin ensures your systems are optimized with expert inspections and reliable repairs.',
-        link: '',
+        link: '/services/service_detail/inspection_and_repair',
     },
     {
-        imageSource: service_cctv,
+        imageSource: service_consultancy,
         subHeading: 'CONSULTANCY',
         heading: 'Technology Consultancy',
         number: '05',
         text: 'We offer Tailored solutions to meet your unique home and business technology needs.',
-        link: '',
+        link: '/services/service_detail/technology_consultancy',
     },
     {
-        imageSource: service_electrical,
+        imageSource: service_batteries,
         subHeading: 'Solar Batteries',
         heading: 'Research Solar Batteries',
         number: '06',
         text: 'Trinitwin provides insights into cutting-edge solar batteries for efficient energy storage.',
-        link: '',
+        link: '/services/service_detail/solar_batteries',
     },
 ];
 
