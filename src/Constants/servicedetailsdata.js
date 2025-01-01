@@ -197,7 +197,7 @@ export const servicedetailsdata = {
 
         hero_banner: {
             ...bannerInformationServicesDetails,
-            imageSrc: service_inspection,
+            imageSrc: service_solar,
             title: 'Inspection and Repair',
             currentLink: 'Inspection and Repair',
         },
@@ -261,7 +261,7 @@ export const servicedetailsdata = {
 
         hero_banner: {
             ...bannerInformationServicesDetails,
-            imageSrc: service_consultancy,
+            imageSrc: service_solar,
             title: 'Technology Consultancy',
             currentLink: 'Technology Consultancy',
         },
@@ -326,7 +326,7 @@ export const servicedetailsdata = {
 
         hero_banner: {
             ...bannerInformationServicesDetails,
-            imageSrc: service_batteries,
+            imageSrc: service_solar,
             title: 'Solar Batteries',
             currentLink: 'Solar Batteries',
         },

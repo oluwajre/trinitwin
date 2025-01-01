@@ -12321,14 +12321,25 @@ textarea.form-control-lg {
   color: #fff;
 }
 
-.partners .brand-image {
-  max-width: 200px;
-  filter: grayscale(100%);
-  transition: all 0.3s ease-out;
+.partners .logos {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
 }
-.partners .brand-image:hover {
-  filter: grayscale(0%);
-  transform: scale(1.1);
+.partners .logos .logos-slide {
+  display: flex;
+  flex-shrink: 0;
+  min-width: fit-content;
+  height: auto;
+}
+.partners .logos .logos-slide .brand-image {
+  height: 50px;
+  flex-shrink: 0;
+}
+.partners .logos:hover .logos-slide {
+  animation-play-state: paused;
 }
 
 .getin-touch {
@@ -12783,6 +12794,18 @@ p, h1 {
   animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0 cover 40%;
+}
+
+@keyframes infiniteslider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.infiniteslider {
+  animation: 20s infiniteslider infinite linear;
 }
 
 /*# sourceMappingURL=custom.css.map */

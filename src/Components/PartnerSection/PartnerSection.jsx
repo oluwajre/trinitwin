@@ -1,8 +1,39 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './PartnerSection.css';
 import { felicitysolar_logo, restarsolar_logo, sms_logo } from '../../assets/images';
 
 const PartnerSection = ({ text }) => {
+
+  useEffect(() => {
+    const logosContainer = document.querySelector('.logos');
+
+    if (logosContainer) {
+        const logosSlide = document.querySelector('.logos-slide');
+
+        if (logosSlide) {
+            // Clone the children of logosSlide and append them to a new div
+            const children = Array.from(logosSlide.children);
+            const clonedLogosSlide = logosSlide.cloneNode(false);  // Create an empty clone of logosSlide
+
+            children.forEach((child) => {
+                const cloneChild = child.cloneNode(true); // Clone each child
+                clonedLogosSlide.appendChild(cloneChild);  // Append cloned child to the new cloned div
+            });
+
+            // Add the animation class to both slides
+            logosSlide.classList.add('infiniteslider');
+            clonedLogosSlide.classList.add('infiniteslider');
+
+            // Append the cloned logosSlide to the logosContainer
+            logosContainer.appendChild(clonedLogosSlide);
+        }
+    }
+}, []);
+
+
+
+
+
   return (
     <section className={`partners ${text? 'mt-5': null}`} id="partners" style={text? {backgroundColor: '#e9ecef'}: {backgroundColor: 'inherit'}}>
       <div className={`container ${text? 'py-5': 'pb-5'}`}>
@@ -18,20 +49,17 @@ const PartnerSection = ({ text }) => {
         ): null}
         
 
-        <div className="row align-items-center justify-content-between text-center mt-3">
-          <div className="col-12 col-sm-6 col-lg-3 mb-2 mb-sm-0">
-            <img src={felicitysolar_logo} alt="felicity" className='img-fluid brand-image'/>
+        <div className="mt-3 logos">
+
+          <div className="logos-slide">
+            <img src={felicitysolar_logo} alt="felicity" className='img-fluid brand-image mx-4'/>
+            <img src={restarsolar_logo} alt="felicity" className='img-fluid brand-image mx-4'/>
+            <img src={sms_logo} alt="felicity" className='img-fluid brand-image mx-4'/>
+            <img src={felicitysolar_logo} alt="felicity" className='img-fluid brand-image mx-4'/>
           </div>
-          <div className="col-12 col-sm-6 col-lg-3 mb-2 mb-sm-0">
-            <img src={restarsolar_logo} alt="felicity" className='img-fluid brand-image'/>
-          </div>
-          <div className="col-12 col-sm-6 col-lg-3 mb-2 mb-sm-0">
-            <img src={sms_logo} alt="felicity" className='img-fluid brand-image'/>
-          </div>
-          <div className="col-12 col-sm-6 col-lg-3 mb-2 mb-sm-0">
-            <img src={felicitysolar_logo} alt="felicity" className='img-fluid brand-image'/>
-          </div>
+
         </div>
+
       </div>
     </section>
   )

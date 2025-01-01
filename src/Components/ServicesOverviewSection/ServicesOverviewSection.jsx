@@ -30,7 +30,7 @@ const ServicesOverviewSection = () => {
                 <div className="row text-center justify-content-center mt-5">
                     <div className="col-12 appear">
                         {/* <p className='text-uppercase section-title-p text-primary m-0 mb-3 p-0'>SERVICES</p> */}
-                        <h1 className='display-6 fw-bold m-0 mb-3 p-0'><span className='text-primary'>.</span> We provide <span className='text-primary'>Creative Services</span></h1>
+                        <h1 className='display-6 fw-bold mx-auto mb-3 p-0'><span className='text-primary'>.</span> We provide <span className='text-primary'>Creative Services</span></h1>
                         <p className='mx-auto mt-4' style={{maxWidth: '700px'}}>We deliver innovative, customized solutions designed to meet your unique needs with precision and excellence. Below, you’ll discover a range of services we proudly provide to help you achieve your goals.</p>
                     </div>
                 </div>

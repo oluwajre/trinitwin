@@ -164,3 +164,21 @@
 
 
 
+@keyframes infiniteslider {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+
+}
+
+.infiniteslider {
+  animation: 20s infiniteslider infinite linear;
+}
+
+
+
+

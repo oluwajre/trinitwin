@@ -2,16 +2,32 @@
 @use '../section/mixins' as *;
 
 .partners {
-    // background-color: $gray-200;
-
-    .brand-image {
-        max-width: 200px;
-        filter: grayscale(100%);
-        @include transitionProperty;
-
-        &:hover {
-            filter: grayscale(0%);
-            transform: scale(1.1);
+    .logos {
+      display: flex;
+      gap: 16px;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+  
+      .logos-slide {
+        display: flex;
+        flex-shrink: 0;
+        min-width: fit-content;
+        height: auto;
+  
+        .brand-image {
+          height: 50px;
+          flex-shrink: 0;
         }
+      }
+  
+      &:hover {
+        .logos-slide {
+          animation-play-state: paused;
+        }
+      }
     }
-}
+
+   
+  }
+  
