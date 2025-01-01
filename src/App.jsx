@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { HomePage, AboutPage, ContactPage, ServicesPage, ServiceDetailsPage } from './Pages';
+import { HomePage, AboutPage, ContactPage, ServicesPage, ServiceDetailsPage, MainServiceDetailPage } from './Pages';
 import { PageLoader } from './Components';
 import { PageTitle } from './utils';
 import './App.css';
@@ -57,6 +57,16 @@ function App() {
               <>
                 <ServiceDetailsPage />
                 <PageTitle title='Service Details' />
+              </> 
+             } 
+          />
+
+          <Route 
+            path='/services/service_detail'
+            element={
+              <>
+                <MainServiceDetailPage />
+                <PageTitle title='Main Service Detail' />
               </> 
              } 
           />

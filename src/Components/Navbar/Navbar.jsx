@@ -40,7 +40,7 @@ const Navbar = ({ page }) => {
                             <ul className="dropdown-menu">
                                 <li><Link to='/services' className={`nav-link text-uppercase px-md-0 mx-md-2 ${page.toLowerCase()==='services/our services'? 'active': ''}`}>Our Services</Link></li>
                                 <li style={{display: 'block', opacity: 0}}><hr className="dropdown-divider" /></li>
-                                <li><Link className={`nav-link text-uppercase px-md-0 mx-md-2 ${page.toLowerCase()==='services/service detail'? 'active': ''}`} href="#">Services details</Link></li>
+                                <li><Link to='/services/service_detail' className={`nav-link text-uppercase px-md-0 mx-md-2 ${page.toLowerCase()==='services/service detail'? 'active': ''}`} href="#">Services details</Link></li>
                             </ul>
                         </li>
 

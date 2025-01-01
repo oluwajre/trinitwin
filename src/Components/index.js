@@ -20,6 +20,7 @@ import ServicesOverviewSection from "./ServicesOverviewSection/ServicesOverviewS
 import ServiceColumn from "./ServiceColumn/ServiceColumn";
 import ServiceDetails from "./ServiceDetails/ServiceDetails";
 import ServiceHighlight from "./ServiceHighlight/ServiceHighlight";
+import ServiceToggler from "./ServiceToggler/ServiceToggler";
 
 export { 
     Navbar, 
@@ -43,5 +44,6 @@ export {
     ServicesOverviewSection,
     ServiceColumn,
     ServiceDetails,
-    ServiceHighlight
+    ServiceHighlight,
+    ServiceToggler
 };

@@ -12254,6 +12254,18 @@ textarea.form-control-lg {
   font-size: 1.1em;
 }
 
+.service-toggler-section {
+  border: none;
+  border-top: 1px solid #adb5bd;
+  border-bottom: 1px solid #adb5bd;
+}
+.service-toggler-section .service-toggler-container {
+  overflow-y: hidden;
+  overflow-x: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+}
+
 .about .about-text-container .explore-more {
   text-decoration: none;
   color: inherit;
