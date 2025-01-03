@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './GetInTouch.css';
 import { Link } from 'react-router-dom';
 
 const GetInTouch = ({ isFormComplete }) => {
+    const [countdown, setCountdown] = useState(0);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -14,6 +15,16 @@ const GetInTouch = ({ isFormComplete }) => {
 
     const [status, setStatus] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
+
+    useEffect(()=>{
+        let timer;
+
+        if (countdown > 0) {
+            timer = setTimeout(()=> setCountdown(countdown - 1), 1000);
+        }
+
+        return ()=> clearTimeout(timer);
+    }, [countdown]);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -34,6 +45,7 @@ const GetInTouch = ({ isFormComplete }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setCountdown(60);
         // setStatus('loading');
 
         try {
@@ -153,7 +165,7 @@ const GetInTouch = ({ isFormComplete }) => {
                 {isSubmitting? (
                     <>
                         <span className="spinner-border spinner-border-sm me-1" aria-hidden="true"></span>
-                        Please wait...
+                        Please wait... ({countdown}s)
                     </>): (
                         <span>Send</span>
                     )}

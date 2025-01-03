@@ -11985,7 +11985,12 @@ textarea.form-control-lg {
 }
 @media (max-width: 767.98px) {
   .hero .banner-item {
-    max-height: 500px;
+    max-height: 540px;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero .banner-item {
+    max-height: 520px;
   }
 }
 .hero .banner-item img {
