@@ -66,7 +66,7 @@ function App() {
             element={
               <>
                 <MainServiceDetailPage />
-                <PageTitle title='Main Service Detail' />
+                <PageTitle title='Service Detail' />
               </> 
              } 
           />

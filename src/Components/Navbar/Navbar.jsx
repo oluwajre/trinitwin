@@ -44,9 +44,10 @@ const Navbar = ({ page }) => {
                             </ul>
                         </li>
 
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='products'? 'active': ''}`} href="#">Products</a>
-                        </li>
+                        </li> */}
+
                         <li className="nav-item">
                             <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='project'? 'active': ''}`} href="#">Project</a>
                         </li>
@@ -58,11 +59,11 @@ const Navbar = ({ page }) => {
                     <div className='d-flex flex-column flex-md-row justify-content-center align-items-center mt-3 mt-md-0'>
                         <a href={contactdata.whatsapp} className='btn btn-outline-primary border border-primary border-2 d-none d-md-inline-flex btn-padding'>Get In Touch</a>
                         <a href={contactdata.whatsapp} className='btn btn-primary border-2 d-inline-flex d-md-none btn-padding'>Get In Touch</a>
-                        {/* <div className='d-inline-flex flex-column text-center d-md-none mt-5' style={{maxWidth: '300px'}}>
-                            <p><a>{contactdata.address}</a></p>
+                        <div className='d-inline-flex flex-column text-center d-md-none mt-5' style={{maxWidth: '300px'}}>
+                            {/* <p><a>{contactdata.address}</a></p> */}
                             <p><a href={`tel:${contactdata.phone_1}`}>{contactdata.phone_1}</a></p>
                             <p><a href={`mailto:${contactdata.email}`}>{contactdata.email}</a></p>
-                        </div> */}
+                        </div>
                     </div>
                     
                 </div>

@@ -18,6 +18,11 @@
         .brand-image {
           height: 50px;
           flex-shrink: 0;
+          @include transitionProperty;
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
   

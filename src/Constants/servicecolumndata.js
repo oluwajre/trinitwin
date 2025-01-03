@@ -26,7 +26,7 @@ export const servicecolumndata = [
         link: '/services/service_detail/electrical_wiring',
     },
     {
-        imageSource: service_solar,
+        imageSource: service_inspection,
         subHeading: 'MEASURES',
         heading: 'Inspection and Repair',
         number: '04',
@@ -34,7 +34,7 @@ export const servicecolumndata = [
         link: '/services/service_detail/inspection_and_repair',
     },
     {
-        imageSource: service_solar,
+        imageSource: service_consultancy,
         subHeading: 'CONSULTANCY',
         heading: 'Technology Consultancy',
         number: '05',
@@ -42,7 +42,7 @@ export const servicecolumndata = [
         link: '/services/service_detail/technology_consultancy',
     },
     {
-        imageSource: service_solar,
+        imageSource: service_batteries,
         subHeading: 'Solar Batteries',
         heading: 'Research Solar Batteries',
         number: '06',

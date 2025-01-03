@@ -4,7 +4,10 @@ import { servicecolumndata } from '../../Constants';
 const ServiceToggler = ({ id, setId }) => {
   return (
     <section className='service-toggler-section my-4 py-3'>
-        {/* <div className='d-block mx-auto'>Our Services</div> */}
+        <div className='text-center mb-3'>
+            <h2><span className='text-primary'>.</span> Our <span className='text-primary'>Services</span></h2>
+        </div>
+
         <div className="container service-toggler-container">
             <div className='service-toggler-slide'>
                 {servicecolumndata.map((service, index) => {

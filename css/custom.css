@@ -12259,6 +12259,9 @@ textarea.form-control-lg {
   border-top: 1px solid #adb5bd;
   border-bottom: 1px solid #adb5bd;
 }
+.service-toggler-section h2 {
+  font-family: "Roboto", sans-serif;
+}
 .service-toggler-section .service-toggler-container {
   overflow-y: hidden;
   overflow-x: auto;
@@ -12349,6 +12352,10 @@ textarea.form-control-lg {
 .partners .logos .logos-slide .brand-image {
   height: 50px;
   flex-shrink: 0;
+  transition: all 0.3s ease-out;
+}
+.partners .logos .logos-slide .brand-image:hover {
+  transform: scale(1.1);
 }
 .partners .logos:hover .logos-slide {
   animation-play-state: paused;

@@ -26,7 +26,7 @@ const FooterSection = () => {
                     <ul className="footer-link-group">
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/about'>About</Link></li>
-                        <li><Link to='/'>Services</Link></li>
+                        <li><Link to='/services'>Services</Link></li>
                         <li><Link to='/'>Products</Link></li>
                     </ul>
                 </div>
@@ -47,9 +47,9 @@ const FooterSection = () => {
         <div className='border border-0 border-bottom border-secondary my-5'></div>
 
         <div className="container text-secondary footer-second-container">
-            <div className="row justify-content-between">
+            <div className="row justify-content-around">
                 <div className="col-12 col-sm-auto mb-2 mb-sm-0 text-center"><FontAwesomeIcon icon={faCopyright} className='icon me-1' /><span>2024 Trinitwin Services</span></div>
-                <div className="col-12 col-sm-auto text-center"><a href="">Privacy Policy</a> | <a href="">Terms and Condition</a></div>
+                {/* <div className="col-12 col-sm-auto text-center"><a href="">Privacy Policy</a> | <a href="">Terms and Condition</a></div> */}
             </div>
         </div>
     </section>

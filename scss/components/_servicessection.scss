@@ -190,6 +190,10 @@
     border-top: 1px solid $gray-500;
     border-bottom: 1px solid $gray-500;
 
+    h2 {
+        @include fontFamilyPrimary;
+    }
+
     .service-toggler-container {
         overflow-y: hidden;
         overflow-x: auto;
