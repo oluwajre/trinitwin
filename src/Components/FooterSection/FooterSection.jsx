@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './FooterSection.css';
 import { contactdata } from '../../Constants';
 import { logo } from '../../assets/images';
@@ -8,6 +8,12 @@ import { faCopyright } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 const FooterSection = () => {
+    const [currentYear, setCurrentYear] = useState(null);
+    useEffect(()=> {
+        let currentYear = new Date().getFullYear();
+        setCurrentYear(currentYear);
+    }, []);
+
   return (
     <section className="footer bg-dark py-5" id="footer">
         <div className="container text-secondary">
@@ -27,7 +33,7 @@ const FooterSection = () => {
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/about'>About</Link></li>
                         <li><Link to='/services'>Services</Link></li>
-                        <li><Link to='/'>Products</Link></li>
+                        <li><Link to='/project'>Project</Link></li>
                     </ul>
                 </div>
                 <div className="col-12 col-lg-3 mb-3 mb-lg-0">
@@ -48,7 +54,7 @@ const FooterSection = () => {
 
         <div className="container text-secondary footer-second-container">
             <div className="row justify-content-around">
-                <div className="col-12 col-sm-auto mb-2 mb-sm-0 text-center"><FontAwesomeIcon icon={faCopyright} className='icon me-1' /><span>2024 Trinitwin Services</span></div>
+                <div className="col-12 col-sm-auto mb-2 mb-sm-0 text-center"><FontAwesomeIcon icon={faCopyright} className='icon me-1' /><span>{currentYear} Trinitwin Energy</span></div>
                 {/* <div className="col-12 col-sm-auto text-center"><a href="">Privacy Policy</a> | <a href="">Terms and Condition</a></div> */}
             </div>
         </div>

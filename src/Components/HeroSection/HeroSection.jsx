@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './HeroSection.css';
 import { banner_1, banner_2, banner_3 } from '../../assets/images';
 import { contactdata } from '../../Constants';
@@ -86,7 +87,7 @@ const HeroSection = () => {
                     <div className='container-sm banner-caption text-light text-center scale-down-center'>
                         <h1 className='display-1 banner-sub-title'>Modern Technology in <span className='fw-light'>Sun Energy</span></h1>
                         <p className='lead fw-normal mx-auto' style={{maxWidth: '550px'}}>Advancements in innovation have transformed renewable energy, offering smarter and more efficient solutions for a sustainable future.</p>
-                        <a href="" className='btn btn-primary btn-padding btn-background-black border border-0'><span>Discover</span></a>
+                        <Link to="/services/service_detail/solar_installation" className='btn btn-primary btn-padding btn-background-black border border-0'><span>Discover</span></Link>
                     </div>
                 </div>
 
@@ -95,7 +96,7 @@ const HeroSection = () => {
                     <div className='container-sm banner-caption text-light text-left slide-right' id='banner-caption-left'>
                         <h1 className='display-1 banner-sub-title' style={{maxWidth: '700px'}}>Business Hand in Hand <span className='fw-light'>with New Technology</span></h1>
                         <p className='lead fw-normal' style={{maxWidth: '550px'}}>Leveraging cutting-edge technology, we empower businesses with sustainable energy solutions and advanced security systems to drive progress and efficiency.</p>
-                        <a href="" className='btn btn-primary btn-padding btn-background-black border border-0'><span>Discover</span></a>
+                        <Link to="/about" className='btn btn-primary btn-padding btn-background-black border border-0'><span>Discover</span></Link>
                     </div>
                 </div>
             </div>

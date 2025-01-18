@@ -48,9 +48,9 @@ const Navbar = ({ page }) => {
                             <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='products'? 'active': ''}`} href="#">Products</a>
                         </li> */}
 
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <a className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='project'? 'active': ''}`} href="#">Project</a>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                             <Link to='/contact' className={`nav-link text-uppercase py-md-3 px-md-0 mx-md-2 my-1 my-md-0 ${page.toLowerCase()==='contact'? 'active': ''}`}>Contact</Link>
                         </li>

@@ -10,13 +10,13 @@ const ServiceToggler = ({ id, setId }) => {
 
         <div className="container service-toggler-container">
             <div className='service-toggler-slide'>
-                {servicecolumndata.map((service, index) => {
-                    const newId = service.link.split('/')[3];
+                {servicecolumndata.map((service) => {
+                    const newId = service.linkId || service.link.split('/')[3];
                     return (
                         <button 
                             className={`btn border border-primary border-2 py-2 py-md-3 px-3 px-md-4 mx-4 ${id === newId? 'btn-primary': 'btn-outline-primary'}`}
                             onClick={()=>setId(newId)}
-                            key={index}
+                            key={newId}
                         >
                             {service.heading}
                         </button>

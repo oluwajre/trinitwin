@@ -16,8 +16,9 @@
         height: auto;
   
         .brand-image {
-          height: 50px;
+          height: 60px;
           flex-shrink: 0;
+          padding: .1em 0;
           @include transitionProperty;
 
           &:hover {

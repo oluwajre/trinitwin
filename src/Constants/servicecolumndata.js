@@ -8,6 +8,7 @@ export const servicecolumndata = [
         number: '01',
         text: 'Customized solar energy solutions to lower electricity costs and promote eco-friendly energy usage.',
         link: '/services/service_detail/solar_installation',
+        linkId: 'solar_installation',
     },
     {
         imageSource: service_cctv,
@@ -16,6 +17,7 @@ export const servicecolumndata = [
         number: '02',
         text: 'Reliable surveillance systems providing 24/7 security and peace of mind for homes and businesses.',
         link: '/services/service_detail/cctv_installation',
+        linkId: 'cctv_installation',
     },
     {
         imageSource: service_electrical,
@@ -24,6 +26,7 @@ export const servicecolumndata = [
         number: '03',
         text: 'Expert wiring services ensuring safety, efficiency, and compliance for residential and commercial properties.',
         link: '/services/service_detail/electrical_wiring',
+        linkId: 'electrical_wiring',
     },
     {
         imageSource: service_inspection,
@@ -32,6 +35,7 @@ export const servicecolumndata = [
         number: '04',
         text: 'Trinitwin ensures your systems are optimized with expert inspections and reliable repairs.',
         link: '/services/service_detail/inspection_and_repair',
+        linkId: 'inspection_and_repair',
     },
     {
         imageSource: service_consultancy,
@@ -40,6 +44,7 @@ export const servicecolumndata = [
         number: '05',
         text: 'We offer Tailored solutions to meet your unique home and business technology needs.',
         link: '/services/service_detail/technology_consultancy',
+        linkId: 'technology_consultancy',
     },
     {
         imageSource: service_batteries,
@@ -48,6 +53,7 @@ export const servicecolumndata = [
         number: '06',
         text: 'Trinitwin provides insights into cutting-edge solar batteries for efficient energy storage.',
         link: '/services/service_detail/solar_batteries',
+        linkId: 'solar_batteries',
     },
 ];
 
