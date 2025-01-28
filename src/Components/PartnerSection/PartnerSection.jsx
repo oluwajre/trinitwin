@@ -40,7 +40,7 @@ const PartnerSection = ({ text }) => {
         {text? (
           <div className="row text-center align-items-center pt-5">
             <div className="col-12">
-              <p className='text-uppercase section-title-p text-primary'>Partners</p>
+              <p className='text-uppercase section-title-p text-primary'>Some of our Partners</p>
             </div>
             <div className="col-12">
               <h1 className='display-6 fw-bold mb-4'><span className='text-primary'>.</span> Trinitwin <span className='text-primary'>Brands</span></h1>
@@ -55,7 +55,6 @@ const PartnerSection = ({ text }) => {
             <img src={felicitysolar_logo} alt="felicity" className='img-fluid brand-image mx-4'/>
             <img src={restarsolar_logo} alt="felicity" className='img-fluid brand-image mx-4'/>
             <img src={sms_logo} alt="felicity" className='img-fluid brand-image mx-4'/>
-            <img src={felicitysolar_logo} alt="felicity" className='img-fluid brand-image mx-4'/>
           </div>
 
         </div>
