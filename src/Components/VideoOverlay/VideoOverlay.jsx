@@ -7,7 +7,7 @@ const VideoOverlay = ({ src, HandleVideo }) => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        const loadTimeout = setTimeout(() => setIsLoading(false), 2000);
+        const loadTimeout = setTimeout(() => setIsLoading(false), 2500);
 
         return () => clearTimeout(loadTimeout);
     }, []);
