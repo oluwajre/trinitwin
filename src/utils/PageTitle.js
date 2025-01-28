@@ -5,7 +5,13 @@ const PageTitle = ({title}) => {
     const location = useLocation();
 
     useEffect(() => {
-      document.title = `Trinitwin - ${title}`;
+      if (title === '') {
+        document.title = 'Trinitwin';
+      }
+      else {
+        document.title = `Trinitwin - ${title}`;
+      };
+      
     }, [location, title]);
   
     return null;

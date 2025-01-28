@@ -13,10 +13,10 @@ const Navbar = ({ page }) => {
     <section className="navbar-container sticky-top" id="navbar">
         <nav className="navbar navbar-expand-md bg-body-tertiary shadow py-3">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand" to='/'>
                     <img src={logo} alt="Trinitwin" width="40" className='img-fluid me-3' />
                     Trinitwin
-                </a>
+                </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={() => {setCollapse(!collapse)}}>
                     {collapse? (
                         <span className="navbar-toggler-icon"></span>

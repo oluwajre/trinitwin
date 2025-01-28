@@ -12,12 +12,12 @@ function App() {
       <PageLoader>
         <Routes>
           <Route 
-            path='/' 
+            path='/'
             element={
               <>
                 <HomePage />
-                <PageTitle title='Home' />
-              </> 
+                <PageTitle title='' />
+              </>
              } 
           />
 

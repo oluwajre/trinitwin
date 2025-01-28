@@ -33,7 +33,7 @@ const FooterSection = () => {
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/about'>About</Link></li>
                         <li><Link to='/services'>Services</Link></li>
-                        <li><Link to='/project'>Project</Link></li>
+                        <li><Link to='/'>Project</Link></li>
                     </ul>
                 </div>
                 <div className="col-12 col-lg-3 mb-3 mb-lg-0">

@@ -17,9 +17,10 @@ const ServiceDetailsPage = () => {
         // Handle case where `id` is invalid or data isn't found
         return (
           <div>
-            <Navbar page="services/service detail" />
-            <PageLoader />
-            {/* <p>Service not found. Please check the URL or select a valid service.</p> */}
+            <PageLoader>
+                <Navbar page="services/service detail" />
+                <p>Service not found. Please check the URL or select a valid service.</p>
+            </PageLoader>
           </div>
         );
       }

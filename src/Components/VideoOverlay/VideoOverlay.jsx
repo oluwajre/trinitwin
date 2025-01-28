@@ -27,6 +27,7 @@ const VideoOverlay = ({ src, HandleVideo }) => {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     className="video shadow"
+                    loading='lazy'
                 ></iframe>
             )}
 

@@ -14,10 +14,11 @@ const MainServiceDetailPage = () => {
 
     if (!data) {
         return (
-            <div>
+            <PageLoader>
                 <Navbar page="services/service detail" />
-                <PageLoader />
-            </div>
+                <p>Service not found. Please check the URL or select a valid service.</p>
+            </PageLoader>
+                
         );
     }
 
@@ -29,8 +30,8 @@ const MainServiceDetailPage = () => {
             <ServiceToggler id={id} setId={setId} /> 
             <ServiceDetails data={data.service_details} />
             <TestimonialSection />
-            <section>
-                <div className="container my-5">
+            <section className="getin-touch py-5">
+                <div className="container">
                     <GetInTouch isFormComplete={false} />
                 </div>
             </section>

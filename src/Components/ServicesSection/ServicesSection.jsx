@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ServicesSection.css';
 import { logo } from '../../assets/images';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -27,7 +28,7 @@ const ServicesSection = () => {
                     <p className='mb-1'>
                     Trinitwin Energy offers expert solutions in solar energy installation, advanced security systems, and professional electrical wiring. Our services are designed to enhance sustainability, security, and efficiency for homes and businesses alike.
                     </p>
-                    <a href="" className='fw-bold explore-more'>Explore More<span className='align-middle ms-3' /></a>
+                    <Link to="/services" className='fw-bold explore-more'>Explore More<span className='align-middle ms-3' /></Link>
                 </div>
             </div>
 

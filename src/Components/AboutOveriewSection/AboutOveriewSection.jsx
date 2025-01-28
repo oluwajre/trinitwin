@@ -22,7 +22,7 @@ const AboutOveriewSection = () => {
                     <p>
                         With a strong partnership with top industry brands, we ensure the highest quality and performance in every project. Our goal is to help you reduce energy costs, improve security, and create safer, more efficient environments for your home or business.
                     </p>
-                    <a href="" className='fw-bold explore-more'>Explore More<span className='align-middle ms-3' /></a>
+                    {/* <a href="" className='fw-bold explore-more'>Explore More<span className='align-middle ms-3' /></a> */}
                 </div>
             </div>
         </div>
