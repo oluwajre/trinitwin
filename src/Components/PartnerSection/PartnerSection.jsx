@@ -11,24 +11,33 @@ const PartnerSection = ({ text }) => {
         const logosSlide = document.querySelector('.logos-slide');
 
         if (logosSlide) {
-            // Clone the children of logosSlide and append them to a new div
+            // Clone the children of logosSlide twice and append them
             const children = Array.from(logosSlide.children);
-            const clonedLogosSlide = logosSlide.cloneNode(false);  // Create an empty clone of logosSlide
+
+            // Create two cloned containers
+            const clonedLogosSlide1 = logosSlide.cloneNode(false); // First empty clone
+            const clonedLogosSlide2 = logosSlide.cloneNode(false); // Second empty clone
 
             children.forEach((child) => {
-                const cloneChild = child.cloneNode(true); // Clone each child
-                clonedLogosSlide.appendChild(cloneChild);  // Append cloned child to the new cloned div
+                const cloneChild1 = child.cloneNode(true); // Clone for first slide
+                const cloneChild2 = child.cloneNode(true); // Clone for second slide
+
+                clonedLogosSlide1.appendChild(cloneChild1); // Append to first clone
+                clonedLogosSlide2.appendChild(cloneChild2); // Append to second clone
             });
 
-            // Add the animation class to both slides
+            // Add the animation class to all slides
             logosSlide.classList.add('infiniteslider');
-            clonedLogosSlide.classList.add('infiniteslider');
+            clonedLogosSlide1.classList.add('infiniteslider');
+            clonedLogosSlide2.classList.add('infiniteslider');
 
-            // Append the cloned logosSlide to the logosContainer
-            logosContainer.appendChild(clonedLogosSlide);
+            // Append both cloned logos slides to the logosContainer
+            logosContainer.appendChild(clonedLogosSlide1);
+            logosContainer.appendChild(clonedLogosSlide2);
         }
     }
 }, []);
+
 
 
 
