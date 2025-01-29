@@ -1,6 +1,6 @@
 export const contactdata = {
     email: 'anthonyabereoje@gmail.com',
-    phone_1: '08032001784',
+    phone_1: '08099888444',
     address: 'Suite 12, Winner shopping complex, opposite mobile filling station, Isihor, Edo, Nigeria',
     instagram: 'https://www.instagram.com/trinitwin_energy/',
     facebook: 'https://www.facebook.com/profile.php?id=100063938056686',
