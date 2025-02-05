@@ -6,13 +6,13 @@ const ScrollAnimation = () => {
 
   useEffect(() => {
     const elements = document.querySelectorAll(".appear");
-    console.log("Observer mounted on:", location.pathname);
+    // console.log("Observer mounted on:", location.pathname);
 
     const observer = new IntersectionObserver(
       (entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            console.log("Element in view:", entry.target);
+            // console.log("Element in view:", entry.target);
             entry.target.classList.add("visible");
             observer.unobserve(entry.target); // Stop observing after first appearance
           }
