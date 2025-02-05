@@ -20,8 +20,8 @@ const FooterSection = () => {
             <div className="row justify-content-between">
                 <div className="col-12 col-lg-3 mb-3 mb-lg-0">
                     <div className='d-flex justify-content-start mb-3 align-items-center'>
-                        <a href=""><img src={logo} alt="logo" className='img-fluid me-3' style={{maxWidth: '45px'}} /></a>
-                        <h4 className="text-light m-0">{contactdata.company_name}</h4>
+                        <Link to="/"><img src={logo} alt="logo" className='img-fluid me-3' style={{maxWidth: '45px'}} /></Link>
+                        <Link to="/"><h4 className="text-light m-0">{contactdata.company_name}</h4></Link>
                     </div>
                     <p>{contactdata.address}</p>
                     <p>Phone: <a href={`tel: ${contactdata.phone_1}`}>{contactdata.phone_1}</a></p>
