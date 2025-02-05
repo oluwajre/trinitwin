@@ -15,7 +15,7 @@ export const servicedetailsdata = {
         service_details: {
             title_main: `Harness the Power of `,
             title_primary: 'the Sun',
-            title_content: 'At Trinitwin, we specialize in providing tailored solar energy solutions that help you lower electricity costs while promoting a cleaner, greener environment. Whether for your home or business, our expert team ensures that you enjoy reliable, renewable energy designed to meet your unique needs.',
+            title_content: 'At TriniTwin, we specialize in providing tailored solar energy solutions that help you lower electricity costs while promoting a cleaner, greener environment. Whether for your home or business, our expert team ensures that you enjoy reliable, renewable energy designed to meet your unique needs.',
             service_highlights: [
                 {
                     id: 'collapseExample',
@@ -31,7 +31,7 @@ export const servicedetailsdata = {
                 {
                     id: 'collapseExample2',
                     number: '02',
-                    highlight_title: 'Why Choose Trinitwin for Your Solar Needs?',
+                    highlight_title: 'Why Choose TriniTwin for Your Solar Needs?',
                     highlight_subTitle: 'Our team brings years of experience in delivering top-notch solar installations.',
                     content: [
                         'Premium Quality: We use only the best components, ensuring durability and reliability.',
@@ -57,7 +57,7 @@ export const servicedetailsdata = {
                     highlight_subTitle: 'First of all, solar increases the value of your property and it provides you with uninterrupted power supply even during grid outages.',
                     content: [
                         'We are one of the most affordable solar energy providers across the country and we do well to find the best solutions that not only fit you, and your budget.',
-                        'Here at Trinitwin, we have invested so much into acquiring the best products that have minimal to zero effect on the environment.',
+                        'Here at TriniTwin, we have invested so much into acquiring the best products that have minimal to zero effect on the environment.',
                     ]
                 }
             ],
@@ -79,7 +79,7 @@ export const servicedetailsdata = {
         service_details: {
             title_main: `Stay Secure with `,
             title_primary: 'Reliable CCTV Solutions',
-            title_content: 'Protect what matters most with Trinitwin’s state-of-the-art CCTV systems. Whether for your home or business, our installations provide 24/7 surveillance and peace of mind, ensuring that your property is always monitored.',
+            title_content: 'Protect what matters most with TriniTwin’s state-of-the-art CCTV systems. Whether for your home or business, our installations provide 24/7 surveillance and peace of mind, ensuring that your property is always monitored.',
             service_highlights: [
                 {
                     id: 'collapseExample',
@@ -95,7 +95,7 @@ export const servicedetailsdata = {
                 {
                     id: 'collapseExample2',
                     number: '02',
-                    highlight_title: 'Why Choose Trinitwin for CCTV?',
+                    highlight_title: 'Why Choose TriniTwin for CCTV?',
                     highlight_subTitle: 'We Leverage the latest technology, including HD quality, night vision, and motion detection.',
                     content: [
                         'Qualified Experts: Our team delivers impeccable installation and exceptional ongoing support.',
@@ -141,7 +141,7 @@ export const servicedetailsdata = {
         service_details: {
             title_main: `Expert Electrical `,
             title_primary: 'Wiring Services',
-            title_content: 'At Trinitwin, we provide professional and reliable electrical wiring solutions tailored to meet the needs of residential, commercial, and industrial properties. Our commitment to safety, efficiency, and quality ensures that every project is handled with the utmost precision and care.',
+            title_content: 'At TriniTwin, we provide professional and reliable electrical wiring solutions tailored to meet the needs of residential, commercial, and industrial properties. Our commitment to safety, efficiency, and quality ensures that every project is handled with the utmost precision and care.',
             service_highlights: [
                 {
                     id: 'collapseExample',
@@ -157,7 +157,7 @@ export const servicedetailsdata = {
                 {
                     id: 'collapseExample2',
                     number: '02',
-                    highlight_title: 'Why Choose Trinitwin for Electrical Wiring?',
+                    highlight_title: 'Why Choose TriniTwin for Electrical Wiring?',
                     highlight_subTitle: 'Our team is fully licensed and trained to handle all types of wiring projects.',
                     content: [
                         'We use top-quality wires and components to guarantee long-lasting reliability.',
@@ -203,9 +203,9 @@ export const servicedetailsdata = {
         },
 
         service_details: {
-            title_main: `Trinitwin’s Trusted `,
+            title_main: `TriniTwin’s Trusted `,
             title_primary: 'Inspection and Repair Services',
-            title_content: 'At Trinitwin, we understand the importance of maintaining the safety, efficiency, and longevity of your electrical and solar systems. Our dedicated team provides expert inspection and repair services, ensuring your systems are always in optimal condition.',
+            title_content: 'At TriniTwin, we understand the importance of maintaining the safety, efficiency, and longevity of your electrical and solar systems. Our dedicated team provides expert inspection and repair services, ensuring your systems are always in optimal condition.',
             service_highlights: [
                 {
                     id: 'collapseExample',
@@ -213,7 +213,7 @@ export const servicedetailsdata = {
                     highlight_title: 'What We Provide',
                     highlight_subTitle: 'Our experienced professionals conduct in-depth evaluations of your electrical wiring, solar installations, and related systems. We identify faults, inefficiencies, or potential risks with unmatched precision.',
                     content: [
-                        'Using industry-best practices, high-quality tools, and materials, we deliver reliable solutions for any issues uncovered during inspections. Whether it’s faulty wiring or underperforming solar panels, Trinitwin gets the job done.',
+                        'Using industry-best practices, high-quality tools, and materials, we deliver reliable solutions for any issues uncovered during inspections. Whether it’s faulty wiring or underperforming solar panels, TriniTwin gets the job done.',
                         'Beyond immediate repairs, we offer proactive maintenance plans designed to protect your investment, reduce downtime, and extend the life of your systems.'
                     ]
                 },
@@ -223,9 +223,9 @@ export const servicedetailsdata = {
                     highlight_title: 'Why our Inspection and Repair are Vital',
                     highlight_subTitle: 'Our detailed inspections and expert repairs enhance the functionality of your systems, saving energy and reducing costs.',
                     content: [
-                        'Trinitwin ensures your property is protected from electrical hazards or system failures.',
+                        'TriniTwin ensures your property is protected from electrical hazards or system failures.',
                         'Timely repairs minimize the need for expensive replacements down the line.',
-                        'Trust in systems that operate smoothly and consistently, powered by Trinitwin’s expertise.'
+                        'Trust in systems that operate smoothly and consistently, powered by TriniTwin’s expertise.'
                     ]
                 },
                 {
@@ -236,18 +236,18 @@ export const servicedetailsdata = {
                     content: [
                         'Using advanced tools and our team’s expertise, we identify root causes and provide a clear report of the issues.',
                         'Our technicians execute targeted repairs, addressing each problem with solutions tailored to your system’s unique needs.',
-                        'We test every component post-repair to guarantee optimal performance and meet Trinitwin’s high-quality standards.'
+                        'We test every component post-repair to guarantee optimal performance and meet TriniTwin’s high-quality standards.'
                     ]
                 },
                 {
                     id: 'collapseExample4',
                     number: '04',
-                    highlight_title: 'Why Partner with Trinitwin?',
+                    highlight_title: 'Why Partner with TriniTwin?',
                     highlight_subTitle: 'Industry Expertise: Years of experience in electrical and solar systems ensure our services are second to none.',
                     content: [
                         'Reliable Service: We prioritize timely, efficient solutions without compromising quality.',
                         'Tailored Approach: Our solutions are customized to meet the specific needs of your property.',
-                        'Commitment to Excellence: At Trinitwin, customer satisfaction is at the heart of everything we do.'
+                        'Commitment to Excellence: At TriniTwin, customer satisfaction is at the heart of everything we do.'
                     ]
                 }
             ],
@@ -267,9 +267,9 @@ export const servicedetailsdata = {
         },
 
         service_details: {
-            title_main: `Trinitwin Technology Consultancy: `,
+            title_main: `TriniTwin Technology Consultancy: `,
             title_primary: 'Innovating Your Future',
-            title_content: 'In today’s fast-paced digital world, staying ahead requires tailored technological solutions that align with your unique needs. At Trinitwin, we offer expert technology consultancy services designed to empower homes, businesses, and industries with innovative and practical strategies.',
+            title_content: 'In today’s fast-paced digital world, staying ahead requires tailored technological solutions that align with your unique needs. At TriniTwin, we offer expert technology consultancy services designed to empower homes, businesses, and industries with innovative and practical strategies.',
             service_highlights: [
                 {
                     id: 'collapseExample',
@@ -279,7 +279,7 @@ export const servicedetailsdata = {
                     content: [
                         'Our seasoned consultants provide reliable advice on system upgrades, integration, and emerging technologies to enhance your operations.',
                         'From concept to execution, we assist in implementing the best solutions to achieve your objectives seamlessly.',
-                        'Trinitwin stays ahead of the curve, offering insights into the latest technological advancements that benefit your home or business.'
+                        'TriniTwin stays ahead of the curve, offering insights into the latest technological advancements that benefit your home or business.'
                     ]
                 },
                 {
@@ -307,7 +307,7 @@ export const servicedetailsdata = {
                 {
                     id: 'collapseExample4',
                     number: '04',
-                    highlight_title: 'Benefits of Partnering with Trinitwin',
+                    highlight_title: 'Benefits of Partnering with TriniTwin',
                     highlight_subTitle: 'Leverage technology to expand your capabilities and achieve long-term success.',
                     content: [
                         'Cost Efficiency: Optimize processes and reduce unnecessary expenses with expert advice.',
@@ -333,13 +333,13 @@ export const servicedetailsdata = {
 
         service_details: {
             title_main: `Reliable `,
-            title_primary: 'Solar Batteries by Trinitwin',
-            title_content: 'Maximize the efficiency and reliability of your solar energy system with Trinitwin’s high-quality solar batteries. Our range of advanced energy storage solutions is designed to meet the diverse needs of homes, businesses, and industrial facilities.',
+            title_primary: 'Solar Batteries by TriniTwin',
+            title_content: 'Maximize the efficiency and reliability of your solar energy system with TriniTwin’s high-quality solar batteries. Our range of advanced energy storage solutions is designed to meet the diverse needs of homes, businesses, and industrial facilities.',
             service_highlights: [
                 {
                     id: 'collapseExample',
                     number: '01',
-                    highlight_title: 'Why Choose Trinitwin for Solar Batteries?',
+                    highlight_title: 'Why Choose TriniTwin for Solar Batteries?',
                     highlight_subTitle: 'We offer durable and efficient batteries from trusted manufacturers, ensuring long-lasting performance.',
                     content: [
                         'Our experts guide you to the ideal battery solution based on your energy needs and budget.',
@@ -361,7 +361,7 @@ export const servicedetailsdata = {
                 {
                     id: 'collapseExample3',
                     number: '03',
-                    highlight_title: 'Why Trinitwin Stands Out',
+                    highlight_title: 'Why TriniTwin Stands Out',
                     highlight_subTitle: 'Expert Support: Our team provides installation, maintenance, and support services for your solar batteries.',
                     content: [
                         'Comprehensive Solutions: We integrate your battery seamlessly into your existing solar setup.',

@@ -33,7 +33,7 @@ const GoogleMap = () => {
                 <AnyReactComponent
                     lat={defaultProps.center.lat}
                     lng={defaultProps.center.lng}
-                    text="Trinitwin"
+                    text={contactdata.company_name}
                 />
             </GoogleMapReact>
         </div>

@@ -13,7 +13,7 @@ const ServicesOverviewSection = () => {
                     <p className='text-uppercase section-title-p text-primary'>Services</p>
                     <div className="col-lg-7 mb-4 appear">
                         <div className="row">
-                            <div className="col-9 col-lg-7"><h1 className='display-6 fw-bold mb-0'>Welcome to Trinitwin Services</h1></div>
+                            <div className="col-9 col-lg-7"><h1 className='display-6 fw-bold mb-0'>Welcome to TriniTwin Services</h1></div>
                             <div className="col-3 col-lg-5 align-right">
                                 <img src={logo} alt="logo-black" className='img-fluid logo'/>
                             </div>
@@ -22,7 +22,7 @@ const ServicesOverviewSection = () => {
                     </div>
                     <div className="col-lg-5">
                         <p className='mb-1'>
-                        Trinitwin Energy offers expert solutions in solar energy installation, advanced security systems, and professional electrical wiring. Our services are designed to enhance sustainability, security, and efficiency for homes and businesses alike.
+                        TriniTwin Energy offers expert solutions in solar energy installation, advanced security systems, and professional electrical wiring. Our services are designed to enhance sustainability, security, and efficiency for homes and businesses alike.
                         </p>
                     </div>
                 </div>

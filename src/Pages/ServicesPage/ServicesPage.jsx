@@ -7,13 +7,13 @@ import { CarouselClick } from '../../utils';
 const ServicesPage = () => {
   return (
     <>
-      <CarouselClick />
       <Navbar page='services/our services'/>
       <HeroBanner bannerInformation={bannerInformationServices} />
       <ServicesOverviewSection />
       <TestimonialSection />
       <PartnerSection text={true}/>
       <FooterSection />
+      <CarouselClick />
     </>
   )
 }

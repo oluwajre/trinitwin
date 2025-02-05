@@ -68,7 +68,7 @@ const TeamSection = () => {
                     ): null}
                     <div className="collapse" id="collapseExample">
                         <p className='lead fw-normal mb-3'>Born and raised in Nigeria, Anthony has always been driven by a deep commitment to solving everyday energy challenges. His academic and professional journey has been characterized by an unyielding determination to bring affordable and sustainable technology to homes and businesses.</p>
-                        <p className='lead fw-normal'>Under his leadership, Trinitwin has collaborated with notable brands such as Felicity Solar, Rester Solar, Siwina, and Sun Mate Solar (SMS). These partnerships underscore his dedication to maintaining high standards and delivering quality services.</p>
+                        <p className='lead fw-normal'>Under his leadership, TriniTwin has collaborated with notable brands such as Felicity Solar, Rester Solar, Siwina, and Sun Mate Solar (SMS). These partnerships underscore his dedication to maintaining high standards and delivering quality services.</p>
                         {textCollapse? null: (
                             <a type="button" className='fw-bold explore-more' data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onClick={handleCollapse}>
                                 See less<span className='align-middle ms-2' />

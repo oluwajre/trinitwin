@@ -10,7 +10,6 @@ const AboutPage = () => {
 
   return (
     <>
-      <CarouselClick />
       <Navbar page='About' />
       <HeroBanner bannerInformation={bannerInformationAbout} />
       <AboutOveriewSection />
@@ -23,6 +22,7 @@ const AboutPage = () => {
       <CounterSection backgroundColor='#f8f9fa' alternate={true}/>
       <TeamSection />
       <FooterSection />
+      <CarouselClick />
     </>
   )
 }

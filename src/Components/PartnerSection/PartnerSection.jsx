@@ -52,7 +52,7 @@ const PartnerSection = ({ text }) => {
               <p className='text-uppercase section-title-p text-primary'>Some of our Partners</p>
             </div>
             <div className="col-12">
-              <h1 className='display-6 fw-bold mb-4'><span className='text-primary'>.</span> Trinitwin <span className='text-primary'>Brands</span></h1>
+              <h1 className='display-6 fw-bold mb-4'><span className='text-primary'>.</span> TriniTwin <span className='text-primary'>Brands</span></h1>
             </div>
         </div>
         ): null}

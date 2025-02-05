@@ -24,7 +24,6 @@ const MainServiceDetailPage = () => {
 
     return (
         <>
-            <CarouselClick />
             <Navbar page="services/service detail" />
             <HeroBanner bannerInformation={data.hero_banner} />
             <ServiceToggler id={id} setId={setId} /> 
@@ -36,6 +35,7 @@ const MainServiceDetailPage = () => {
                 </div>
             </section>
             <FooterSection />
+            <CarouselClick />
         </>
     );
 };

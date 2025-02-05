@@ -6,13 +6,13 @@ const PageTitle = ({title}) => {
 
     useEffect(() => {
       if (title === '') {
-        document.title = 'Trinitwin';
+        document.title = 'TriniTwin';
       }
       else {
-        document.title = `Trinitwin - ${title}`;
+        document.title = `TriniTwin - ${title}`;
       };
       
-    }, [location, title]);
+    }, [location.pathname, title]);
   
     return null;
 }

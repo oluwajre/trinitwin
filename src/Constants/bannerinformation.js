@@ -4,7 +4,7 @@ export const bannerInformationAbout = {
 
     imageSrc: banner_about,
     subTitle: 'About',
-    title: 'About Trinitwin',
+    title: 'About TriniTwin',
     previousLink: {
         name: 'Home',
         path: '/',
@@ -15,7 +15,7 @@ export const bannerInformationAbout = {
 export const bannerInformationContact = {
     imageSrc: contact_banner,
     subTitle: 'Contact',
-    title: 'Contact Trinitwin',
+    title: 'Contact TriniTwin',
     previousLink: {
         name: 'Home',
         path: '/',
@@ -25,7 +25,7 @@ export const bannerInformationContact = {
 
 export const bannerInformationServices = {
     imageSrc: banner_2,
-    subTitle: 'Trinitwin',
+    subTitle: 'TriniTwin',
     title: 'Our Services',
     previousLink: {
         name: 'Home',

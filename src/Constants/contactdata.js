@@ -1,4 +1,5 @@
 export const contactdata = {
+    company_name: 'TriniTwin',
     email: 'anthonyabereoje@gmail.com',
     phone_1: '08099888444',
     address: 'Suite 12, Winner shopping complex, opposite mobile filling station, Isihor, Edo, Nigeria',

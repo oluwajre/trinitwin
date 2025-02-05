@@ -15,7 +15,7 @@ const Navbar = ({ page }) => {
             <div className="container-fluid">
                 <Link className="navbar-brand" to='/'>
                     <img src={logo} alt="Trinitwin" width="40" className='img-fluid me-3' />
-                    Trinitwin
+                    {contactdata.company_name}
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onClick={() => {setCollapse(!collapse)}}>
                     {collapse? (

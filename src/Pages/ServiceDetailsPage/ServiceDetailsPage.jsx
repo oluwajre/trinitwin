@@ -1,49 +1,47 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import './ServiceDetailsPage.css';
 import { Navbar, HeroBanner, ServiceDetails, GetInTouch, FooterSection, PageLoader, TestimonialSection } from "../../Components";
 import { servicedetailsdata } from "../../Constants";
-import { CarouselClick } from "../../utils";
+import { CarouselClick, ScrollAnimation } from "../../utils"; // Import ScrollAnimation
 
 const ServiceDetailsPage = () => {
-    const { id } = useParams();
-    const [data, setData] = useState(null);
+  const { id } = useParams();
+  const [data, setData] = useState(null);
+  const navigate = useNavigate(); // For redirection if service not found
 
-    useEffect(()=> {
-        setData(servicedetailsdata[id] || null);
-    }, [id]);
+  useEffect(() => {
+    if (servicedetailsdata[id]) {
+      setData(servicedetailsdata[id]);
+    } else {
+      setData(null);
+      // Redirect to services page if invalid service ID
+      navigate("/services", { replace: true });
+    }
+  }, [id, navigate]);
 
-    if (!data) {
-        // Handle case where `id` is invalid or data isn't found
-        return (
-          <div>
-            <PageLoader>
-                <Navbar page="services/service detail" />
-                <p>Service not found. Please check the URL or select a valid service.</p>
-            </PageLoader>
-          </div>
-        );
-      }
+  if (!data) {
+    // Show loading spinner or message until data is fetched
+    return <PageLoader />;
+  }
 
   return (
     <>
-      <CarouselClick />
-      <Navbar page='services/service detail'/>
+      <Navbar page='services/service detail' />
       <HeroBanner bannerInformation={data.hero_banner} />
-      <ServiceDetails data={data.service_details}/>
+      <ServiceDetails data={data.service_details} />
       <TestimonialSection />
+      
       <section>
         <div className="container my-5">
           <GetInTouch isFormComplete={false} />
         </div>
       </section>
       <FooterSection />
+      <ScrollAnimation />
+      <CarouselClick />
     </>
-  )
-}
+  );
+};
 
-export default ServiceDetailsPage
-
-
-
-
+export default ServiceDetailsPage;

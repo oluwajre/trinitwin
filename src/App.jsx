@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HomePage, AboutPage, ContactPage, ServicesPage, ServiceDetailsPage, MainServiceDetailPage } from './Pages';
 import { PageLoader } from './Components';
-import { PageTitle } from './utils';
+import { PageTitle, ScrollAnimation } from './utils';
 import './App.css';
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
               <>
                 <HomePage />
                 <PageTitle title='' />
+                <ScrollAnimation />
               </>
              } 
           />
@@ -27,6 +28,7 @@ function App() {
               <>
                 <AboutPage />
                 <PageTitle title='About Us' />
+                <ScrollAnimation />
               </> 
              } 
           />
@@ -37,6 +39,7 @@ function App() {
               <>
                 <ContactPage />
                 <PageTitle title='Contact Us' />
+                <ScrollAnimation />
               </> 
              } 
           />
@@ -47,6 +50,7 @@ function App() {
               <>
                 <ServicesPage />
                 <PageTitle title='Our Services' />
+                <ScrollAnimation />
               </> 
              } 
           />
@@ -57,6 +61,7 @@ function App() {
               <>
                 <ServiceDetailsPage />
                 <PageTitle title='Service Details' />
+                {/* <ScrollAnimation /> */}
               </> 
              } 
           />
@@ -67,6 +72,7 @@ function App() {
               <>
                 <MainServiceDetailPage />
                 <PageTitle title='Service Detail' />
+                <ScrollAnimation />
               </> 
              } 
           />

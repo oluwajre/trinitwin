@@ -7,7 +7,6 @@ const HomePage = () => {
 
   return (
     <>
-        <CarouselClick />
         <Navbar page='home' />
         <HeroSection />
         <ServicesSection />
@@ -20,6 +19,7 @@ const HomePage = () => {
           </div>
         </section>
         <FooterSection />
+        <CarouselClick />
     </>
   )
 }
