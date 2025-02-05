@@ -17,6 +17,11 @@ import founder_image_2 from './team/founderimage2.webp';
 import founder_image_3 from './team/founderimage3.webp';
 import get_in_touch_background from './contact/getintouchbackground.jpg';
 import contact_banner from './contact/contact-banner.jpg';
+import counter_homes from './counter/house.png';
+import counter_buildings from './counter/buildings.png';
+import counter_states from './counter/countries.png';
+import counter_hospitals from './counter/hospital.png';
+
 
 
 
@@ -41,5 +46,9 @@ export {
         founder_image_3,
         get_in_touch_background,
         contact_banner,
+        counter_homes,
+        counter_buildings,
+        counter_hospitals,
+        counter_states
     };
 

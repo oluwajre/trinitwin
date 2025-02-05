@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Counter.css';
 
-const Counter = ({ text, target, offset = 300, alternate }) => {
+const Counter = ({ text, target, imgSrc, offset = 300, alternate }) => {
   const [count, setCount] = useState(0);
   const counterRef = useRef(null); // Ref to track the counter element's position
 
@@ -40,9 +40,10 @@ const Counter = ({ text, target, offset = 300, alternate }) => {
   }, [count, target, offset]);
 
   return (
-    <div ref={counterRef} className='col-12 col-sm-auto my-3 my-sm-0 text-center d-flex flex-column align-items-center justify-content-center appear'>
-      <h1 className={`display-1 banner-title m-0 p-0 ${alternate? 'text-dark': 'text-primary'}`}>{count}<span style={{fontSize: '0.5em'}}>+</span></h1>
-      <h5 className={`fw-bold text-uppercase m-0 p-0 ${alternate ? 'text-primary': 'text-dark'}`}>{text}</h5>
+    <div ref={counterRef} className='col-12 col-sm-auto my-3 my-sm-0 text-center d-flex flex-column align-items-center justify-content-evenly appear'>
+      <img src={imgSrc} className='img-fluid mx-auto' style={{width: '70px'}}/>
+      <h1 className={`display-1 banner-title m-0 p-0 ${alternate? 'text-dark': 'text-primary'}`}>{count}</h1>
+      <h5 className={`fw-bold text-uppercase m-0 p-0 align-self-center ${alternate ? 'text-primary': 'text-dark'}`} style={{maxWidth: '170px'}}>{text}</h5>
     </div>
   );
 };

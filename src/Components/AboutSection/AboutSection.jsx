@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './AboutSection.css'
 import Counter from '../Counter/Counter';
+import { counter_homes, counter_buildings, counter_hospitals, counter_states } from '../../assets/images';
 
 const AboutSection = () => {
   return (
@@ -24,10 +25,10 @@ const AboutSection = () => {
             </div>
 
             <div className="row mt-5 p-5 shadow justify-content-between">
-                <Counter text='states' target='31' alternate={false}/>
-                <Counter text='project' target='135' alternate={false}/>
-                <Counter text='companies' target='105' alternate={false}/>
-                <Counter text='homes' target='200' alternate={false}/>
+                <Counter text='States' target='9'  imgSrc={counter_states} alternate={false}/>
+                <Counter text='Public Sector & Institutions' target='18'  imgSrc={counter_hospitals} alternate={false}/>
+                <Counter text='Commercial & Industrial' target='39'  imgSrc={counter_buildings} alternate={false}/>
+                <Counter text='Homes' target='154'  imgSrc={counter_homes} alternate={false}/>
             </div>
         </div>
     </section>
