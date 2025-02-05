@@ -53,15 +53,15 @@ const GetInTouch = ({ isFormComplete }) => {
             if (response.data.success) {
                 setStatus('success');
                 resetForm();
-                setTimeout(() => setStatus(''), 5000);
+                setTimeout(() => setStatus(''), 6000);
             } else {
                 setStatus('error');
-                setTimeout(() => setStatus(''), 5000);
+                setTimeout(() => setStatus(''), 6000);
             }
         } catch (error) {
             console.error('Error:', error);
             setStatus('error');
-            setTimeout(() => setStatus(''), 5000);
+            setTimeout(() => setStatus(''), 6000);
         } finally {
             setIsSubmitting(false);
         }
