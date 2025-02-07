@@ -1,7 +1,11 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const ScrollAnimation = () => {
+const ScrollAnimation = ({ id }) => {
+  if (!id) {
+    id = 'solar_installation'
+  };
+  
   const location = useLocation(); // Get current route
 
   useEffect(() => {
@@ -26,7 +30,7 @@ const ScrollAnimation = () => {
     return () => {
       elements.forEach((el) => observer.unobserve(el));
     };
-  }, [location.pathname]); // Re-run on route change
+  }, [location.pathname, id]); // Re-run on route change
 
   return null;
 };

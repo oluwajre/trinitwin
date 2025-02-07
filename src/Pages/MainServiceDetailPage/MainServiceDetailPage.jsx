@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, HeroBanner, ServiceDetails, GetInTouch, FooterSection, PageLoader, TestimonialSection, ServiceToggler } from "../../Components";
 import { servicedetailsdata } from "../../Constants";
-import { CarouselClick } from "../../utils";
+import { CarouselClick, ScrollAnimation } from "../../utils";
 
 const MainServiceDetailPage = () => {
     const [id, setId] = useState('solar_installation');
@@ -36,6 +36,7 @@ const MainServiceDetailPage = () => {
             </section>
             <FooterSection />
             <CarouselClick />
+            <ScrollAnimation id={id}/>
         </>
     );
 };
