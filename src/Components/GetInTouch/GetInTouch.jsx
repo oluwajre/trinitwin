@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './GetInTouch.css';
 import { Link } from 'react-router-dom';
+import { contactdata } from '../../Constants';
 
 const GetInTouch = ({ isFormComplete }) => {
     const [countdown, setCountdown] = useState(0);
@@ -44,12 +45,13 @@ const GetInTouch = ({ isFormComplete }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        const applicationFormData = {...formData, receiver: contactdata.email, company: contactdata.company_name};
         setIsSubmitting(true);
         setCountdown(60);
         // setStatus('loading');
 
         try {
-            const response = await axios.post('https://trenova-form-backend.onrender.com/api/contact/send-message', formData);
+            const response = await axios.post('https://trenova-form-backend.onrender.com/api/contact/send-message', applicationFormData);
             if (response.data.success) {
                 setStatus('success');
                 resetForm();
